@@ -1,26 +1,24 @@
 from datetime import datetime, timedelta
 from sys import stdout
 from time import sleep
-
+print("----TEMPO DE ALUGUEL----")
+print('DIAS')
 Dias = int(input())
+
+print("HORAS")
 Horas = int(input())
+
 TransformaSegundo = (86400*Dias)+(3600*Horas)
-
-
-
 
 
 tempo = timedelta(seconds = TransformaSegundo)
 while (str(tempo) != "0:00:00"):
-    stdout.write("\r%s" % tempo)
+    tempoStr = str(tempo)  # converte timedata para string
+    # replace troca a palavra day por dia
+    stdout.write("\r%s" % tempoStr.replace("day", "Dia e",).replace( ",","")+'hrs Restantes')
     stdout.flush()
     tempo = tempo - timedelta(seconds = 1)
     sleep(1.0)
 
-stdout.write("\r0:00:00")
-stdout.flush()
-print()
-
 if (str(tempo) == "0:00:00"):
     print('Tempo de espera de 1 hora antes de iniciar contagem para multa')
-
