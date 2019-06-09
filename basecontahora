@@ -1,0 +1,8 @@
+import time
+precocarro = int(input())
+horas = int(input())
+custo = (hora*precocarro)
+cont = 0
+while cont < horas:
+    sleep(3600)
+    cont += 1
