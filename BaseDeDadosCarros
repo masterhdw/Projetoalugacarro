@@ -1,0 +1,54 @@
+#BASE DE DADOS CARROS
+
+#Econômico (Sem Ar-Condicionado)
+fiat_novo_uno = 94
+fiat_mobi = 92
+
+#Econômico
+fiat_mobi_like = 102
+ford_ka_hatch_se = 104
+
+#Compactos
+wolkswagen_gol = 110
+ford_ka = 110
+chevrolet_onix = 112
+hyundai_hb20 = 115
+
+#Intermediario
+chevrolet_prisma = 120
+hyundai_hb20_s = 120
+volkswagen_voyage = 122
+nissan_versa = 123
+ford_focus = 128
+
+#Medio
+renault_sandero = 130
+
+#FullSize
+toyota_corola = 160
+volkswagen_jetta = 160
+chevrolet_cruze = 162
+tiguan_allspace = 202
+
+#Luxo
+mitsubishi_lancer = 206
+nissan_sentra = 206
+
+#VanMinivan
+fiat_doblo = 173
+chrevolet_spin = 170
+
+#Utilitario
+renault_oroch = 150
+fiat_strada = 147
+
+#PickUpGrandes
+gm_s10 = 350
+ford_ranger = 250
+
+#SUV
+renault_duster = 150
+ford_ecosport = 153
+
+#SUVGrande
+jeep_compass_longitude = 300
