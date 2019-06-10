@@ -1,54 +1,54 @@
 #BASE DE DADOS CARROS
 
 #Econômico (Sem Ar-Condicionado)
-fiat_novo_uno = 94
-fiat_mobi = 92
+fiat_novo_uno = 4.4
+fiat_mobi = 4.2
 
 #Econômico
-fiat_mobi_like = 102
-ford_ka_hatch_se = 104
+fiat_mobi_like = 5.2
+ford_ka_hatch_se = 5.4
 
 #Compactos
-wolkswagen_gol = 110
-ford_ka = 110
-chevrolet_onix = 112
-hyundai_hb20 = 115
+wolkswagen_gol = 6.0
+ford_ka = 6.0
+chevrolet_onix = 6.2
+hyundai_hb20 = 6.5
 
 #Intermediario
-chevrolet_prisma = 120
-hyundai_hb20_s = 120
-volkswagen_voyage = 122
-nissan_versa = 123
-ford_focus = 128
+chevrolet_prisma = 7.0
+hyundai_hb20_s = 7.0
+volkswagen_voyage = 7.2
+nissan_versa = 7.3
+ford_focus = 7.8
 
 #Medio
-renault_sandero = 130
+renault_sandero = 6.0
 
 #FullSize
-toyota_corola = 160
-volkswagen_jetta = 160
-chevrolet_cruze = 162
-tiguan_allspace = 202
+toyota_corola = 11.0
+volkswagen_jetta = 11.0
+chevrolet_cruze = 11.2
+tiguan_allspace = 15.2
 
 #Luxo
-mitsubishi_lancer = 206
-nissan_sentra = 206
+mitsubishi_lancer = 15.6
+nissan_sentra = 15.6
 
 #VanMinivan
-fiat_doblo = 173
-chrevolet_spin = 170
+fiat_doblo = 12.3
+chrevolet_spin = 12.0
 
 #Utilitario
-renault_oroch = 150
-fiat_strada = 147
+renault_oroch = 10.0
+fiat_strada = 9.7
 
 #PickUpGrandes
-gm_s10 = 350
-ford_ranger = 250
+gm_s10 = 22.0
+ford_ranger = 21.0
 
 #SUV
-renault_duster = 150
-ford_ecosport = 153
+renault_duster = 10.0
+ford_ecosport = 10.3
 
 #SUVGrande
-jeep_compass_longitude = 300
+jeep_compass_longitude = 24.0
