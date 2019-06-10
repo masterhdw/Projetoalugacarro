@@ -1,14 +1,15 @@
-import time
+from time import sleep
 
-#essa função conta o delay de tempo que o cara alugou o carro e se o tempo acabar a função retorna 0, mas nao printa nehum 
-cronometro pq isso é coisa de gay
+#essa função conta o delay de tempo que o cara alugou o carro e se o tempo acabar a função retorna 0.
 
 def tempocarro (horas):
     cont = 0
     while 1:
         sleep(3600)
-        if cont < horas:
+        if cont == horas:
+           return 0
+        elif cont == horas-1:
+            print('tempo finalizado, contagem regressiva para multa')
+            break
+        elif cont < horas:
             cont += 1
-        else:
-            return 0
-    
