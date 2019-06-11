@@ -8,7 +8,7 @@ def timer (Dias, Horas):
     tempo = timedelta(seconds = TransformaSegundo)
     while (str(tempo) != "0:00:00"):
         tempoStr = str(tempo)
-        stdout.write("\r%s" % tempoStr.replace("day", "Dia e",).replace( ",","")+'hrs Restantes')
+        stdout.write("\r%s" % tempoStr.replace("days", "Dias e",).replace( ",","")+'hrs Restantes')
         stdout.flush()
         tempo = tempo - timedelta(seconds = 1)
         sleep(1.0)
@@ -18,15 +18,15 @@ def timer (Dias, Horas):
         tempo = timedelta(seconds = 3600)
         while (str(tempo) != "0:00:00"):
             tempoStr = str(tempo)
-            stdout.write("\r%s" % tempoStr.replace("day", "Dia e", ).replace(",", "") + 'hrs Restantes')
+            stdout.write("\r%s" % tempoStr.replace("day", "Dia", ).replace(",", "") + 'hrs Restantes')
             stdout.flush()
             tempo = tempo - timedelta(seconds=1)
             sleep(1.0)
         if (str(tempo) == "0:00:00"):
             print()
             print('Usuario multado por atraso na entrega')
-
+            return 0
+        
 Dias = int(input())
 Horas = int(input())
 timer(Dias, Horas)
-
