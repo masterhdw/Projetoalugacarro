@@ -1,11 +1,14 @@
-from time import sleep
 import time
-comeco = time.localtime()
+
+#captura a hora do inicio
+
+def timeinicio():
+    comeco = time.localtime()
+    return(comeco.tm_yday, comeco.tm_hour, comeco.tm_min)
 
 
-sai = input()
-final = time.localtime()
-print(comeco.tm_yday, comeco.tm_hour, comeco.tm_min)
-print(final.tm_yday, final.tm_hour, final.tm_min)
-a = comeco.tm_min - final.tm_min
-print(a)
+#captura a hora do fim
+
+def timefim():
+    fim = time.localtime()
+    return(fim.tm_yday, fim.tm_hour, fim.tm_min)
