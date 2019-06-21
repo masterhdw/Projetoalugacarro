@@ -1,0 +1,177 @@
+from tkinter import*
+import time
+
+def click_btnCADLOG():
+
+    root2.destroy()
+    root = Tk()
+    root.title("Tela de Login")
+    root.geometry("750x620+1000+100")
+    root["bg"] = "darkslategray"
+    # ================= VARIAVEIS ENTRYS ==================================
+
+    varcpf = StringVar()
+    varsenha = StringVar()
+
+    # ================== LABELS ====================================
+
+    lbl_login = Label(root, text="FAÇA SEU LOGIN", font=("arial", 18, "bold"), bg="darkslategray", fg="black").place(
+        x=262, y=200)
+    lblcpf = Label(root, text="CPF:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230,
+                                                                                                                 y=280)
+    lblsenha = Label(root, text="SENHA:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(
+        x=230, y=330)
+
+    # ======================== ENTRYS ==============================
+    cpf_LOGIN = Entry(root, textvariable=varcpf, font=("times new roman", 13, "bold"), width=30, fg="black").place(
+        x=230, y=300)
+    senha_LOGIN = Entry(root, textvariable=varsenha, font=("times new roman", 13, "bold"), width=30, fg="black").place(
+        x=230, y=350)
+
+    # ======================= BOTÕES ===============================
+    btn_entrar = Button(root, text="ENTRAR", bg="gray", font=("arial", 12, "bold"), width=8, fg="white").place(x=320,
+                                                                                                               y=400)
+
+    root.mainloop()
+
+
+def backcadastro():
+
+    janela = Tk()
+    # LxA+(distancia da janela ate a lateral esquerda)+(distancia da janela ate o topo)
+    janela.geometry("750x620+1000+100")
+
+    janela.title("Estudando por projeto")
+    janela["bg"] = "darkslategray"
+
+    date1 = StringVar()
+    time1 = StringVar()
+
+    date1.set(time.strftime("%d/%m/%Y"))
+    time1.set(time.strftime("%H:%M"))
+    # ========== FOTOS ===============================
+
+    # fotoInicial = PhotoImage(file="ImagemTelaInicial.png")
+
+    # ============= LABELS ===========================
+
+    # lb1image0 = Label(janela, image=fotoInicial)
+    # lb1image0.place(x=250, y=300)
+
+    lbltime = Label(janela, textvariable=time1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
+    lbltime.place(x=671, y=574)
+    lbldate = Label(janela, textvariable=date1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
+    lbldate.place(x=645, y=595)
+
+    # ============= BOTÕES ===========================
+
+    btnLOGIN = Button(janela, text="LOGIN", font=("arial", 16, "bold"), fg="white", width=20, command=click_btnLOGIN,
+                      bg="gray")
+    btnLOGIN.place(x=250, y=400)
+    btnCADASTRO = Button(janela, text="CADASTRAR-SE", font=("arial", 16, "bold"), fg="white", width=20,
+                         command=click_btnCADASTRO, bg="gray")
+    btnCADASTRO.place(x=250, y=450)
+
+    janela.mainloop()
+
+
+def click_btnLOGIN():
+
+    global root
+    janela.destroy()
+    root = Tk()
+    root.title("Tela de Login")
+    root.geometry("750x620+1000+100")
+    root["bg"] = "darkslategray"
+    # ================= VARIAVEIS ENTRYS ==================================
+
+    varcpf = StringVar()
+    varsenha = StringVar()
+
+    #================== LABELS ====================================
+
+    lbl_login = Label(root, text="FAÇA SEU LOGIN", font=("arial", 18, "bold"), bg="darkslategray", fg= "black").place(x=262, y=200)
+    lblcpf = Label(root, text="CPF:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230, y=280)
+    lblsenha = Label(root, text="SENHA:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230, y=330)
+
+    #======================== ENTRYS ==============================
+    cpf_LOGIN = Entry(root, textvariable=varcpf, font=("times new roman", 13, "bold"), width=30, fg="black").place(x=230, y=300)
+    senha_LOGIN = Entry(root, textvariable=varsenha, font=("times new roman", 13, "bold"), width=30, fg="black").place(x=230, y=350)
+
+    #======================= BOTÕES ===============================
+    btn_entrar = Button(root, text="ENTRAR", bg= "gray", font=("arial", 12, "bold"), width=8, fg="white").place(x=320,y=400)
+
+    root.mainloop()
+
+def click_btnCADASTRO():
+
+    global root2
+    janela.destroy()
+    root2 = Tk()
+    root2.title("CADASTRE-SE")
+    root2.geometry("750x620+1000+100")
+    root2["bg"] = "darkslategray"
+    #===================== LABELS =========================
+
+    lblCADASTRO = Label(root2, text="CADASTRO", font=("arial", 20, "bold"), bg="darkslategray", fg= "black").place(x=288, y=180)
+    lblNOME = Label(root2, text="Adicione seu nome:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=260)
+    lblCPF = Label(root2, text="Adicione seu CPF:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=310)
+    lblSENHA = Label(root2, text="Adicione sua senha:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=360)
+    lblSENHA2 = Label(root2, text="Confirme sua senha:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=410)
+
+    #===================== ENTRYS =========================
+
+    txtNOME = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=280)
+    txtCPF = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=330)
+    txtSENHA = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=380)
+    txtSENHA2 = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=430)
+
+    def click_btnCADASTRAR(senha1, senha2):
+        if senha1 != senha2:
+            Label(root2, text="AS SENHAS INFORMADAS NÃO SÃO COMPATÍVEIS", font=("times new roman", 18, "bold")).place(x=300, y=50)
+
+    #====================  BOTÕES =========================
+
+    btnCADASTRAR = Button(root2, text="CADASTRAR", bg="gray", font=("arial", 12, "bold"), width=15, command=click_btnCADASTRAR(txtSENHA, txtSENHA2), fg="white").place(x=288, y=490)
+    btnCADASTRARLOG = Button(root2, text="LOGIN", bg="gray", font=("arial", 12, "bold"), width=15, command=click_btnCADLOG, fg="white").place(x=288, y=530)
+
+    root2.mainloop()
+
+
+global janela
+janela = Tk()
+cont = 0
+#LxA+(distancia da janela ate a lateral esquerda)+(distancia da janela ate o topo)
+janela.geometry("750x620+1000+100")
+
+janela.title("Estudando por projeto")
+janela["bg"] = "darkslategray"
+
+date1 = StringVar()
+time1 = StringVar()
+
+date1.set(time.strftime("%d/%m/%Y"))
+time1.set(time.strftime("%H:%M"))
+#========== FOTOS ===============================
+
+#fotoInicial = PhotoImage(file="ImagemTelaInicial.png")
+
+#============= LABELS ===========================
+
+#lb1image0 = Label(janela, image=fotoInicial)
+#lb1image0.place(x=250, y=300)
+
+lbltime = Label(janela, textvariable=time1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
+lbltime.place(x=671, y=574)
+lbldate = Label(janela, textvariable=date1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
+lbldate.place(x=645, y=595)
+
+#============= BOTÕES ===========================
+
+btnLOGIN = Button(janela, text="LOGIN", font=("arial", 16, "bold"), fg="white", width=20, command=click_btnLOGIN, bg="gray")
+btnLOGIN.place(x=250, y=400)
+btnCADASTRO = Button(janela, text="CADASTRAR-SE", font=("arial", 16, "bold"), fg="white", width=20, command=click_btnCADASTRO, bg="gray")
+btnCADASTRO.place(x=250, y=450)
+
+
+janela.mainloop()
