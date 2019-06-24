@@ -1,0 +1,1220 @@
+from tkinter import*
+import time
+
+from tkinter import *
+
+def click_btnespecificacoesdodge():
+    root19= Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: DODGE TOMAHAWK", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
+    lblespe2 = Label(root19, text="MOTOR: 506cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
+
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesfazer():
+    root19= Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: YAMAHA FAZER", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
+    lblespe2 = Label(root19, text="MOTOR: 250cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 22.3", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 21.9", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
+                                                                                                                 y=230)
+
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesbiz():
+    root19= Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: HONDA BIZ", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
+    lblespe2 = Label(root19, text="MOTOR: 125cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 43.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 45.2", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
+                                                                                                                 y=230)
+
+
+    root19.mainloop()
+
+
+def click_btnespecificacoescg():
+    root19= Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: HONDA CG 160", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
+    lblespe2 = Label(root19, text="MOTOR: 160cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 32.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 33.2", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
+                                                                                                                 y=230)
+
+
+    root19.mainloop()
+
+
+def click_btnespecificacoestrial():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: CHEVROLET TRIALBLAZER", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 2.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: DIESEL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoeslongitude():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: JEEP COMPASS LONGITUDE", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 2.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 6.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.5", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoeseco():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: FORD ECOSPORT", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.5", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 8.9", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesduster():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: RENAULT DUSTER", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 11.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 11.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesranger():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: FORD RANGER", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 2.5", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 6.9", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 8.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoess10():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: CHEVROLET GM S10", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 2.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 13.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 14.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesstrada():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: FIAT STRADA", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesoroch():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: RENAULT OROCH", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesspin():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: CHEVROLET SPIN", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 8.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoesdoblo():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: FIAT DOBLO", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoessentra():
+    root19 = Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: NISSAN SENTRA", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 2.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 9.9", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 12.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root19.mainloop()
+
+
+def click_btnespecificacoeslancer():
+    root36 = Tk()
+    root36.geometry("750x680+1000+100")
+    root36["bg"] = "darkslategray"
+
+    lblespe1 = Label(root36, text="ESPECIFICAÇÕES DO CARRO: MITSUBISHI LANCER", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root36, text="MOTOR: 2.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root36, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root36, text="CONSUMO CIDADE(KM/L): 10.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root36, text="CONSUMO ESTRADA(KM/L): 11.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root36.mainloop()
+
+
+def click_btnespecificacoesallspace():
+    root35 = Tk()
+    root35.geometry("750x680+1000+100")
+    root35["bg"] = "darkslategray"
+
+    lblespe1 = Label(root35, text="ESPECIFICAÇÕES DO CARRO: TIGUAL ALLSPACE", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root35, text="MOTOR: 1.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root35, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root35, text="CONSUMO CIDADE(KM/L): 10.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root35, text="CONSUMO ESTRADA(KM/L): 11.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root35.mainloop()
+
+
+def click_btnespecificacoescruze():
+    root34 = Tk()
+    root34.geometry("750x680+1000+100")
+    root34["bg"] = "darkslategray"
+
+    lblespe1 = Label(root34, text="ESPECIFICAÇÕES DO CARRO: CREVROLET CRUZE", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root34, text="MOTOR: 1.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root34, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root34, text="CONSUMO CIDADE(KM/L): 7.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root34, text="CONSUMO ESTRADA(KM/L): 9.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root34.mainloop()
+
+
+def click_btnespecificacoesjetta():
+    root33 = Tk()
+    root33.geometry("750x680+1000+100")
+    root33["bg"] = "darkslategray"
+
+    lblespe1 = Label(root33, text="ESPECIFICAÇÕES DO CARRO: VOLKSWAGEN JETTA", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root33, text="MOTOR: 1.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root33, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root33, text="CONSUMO CIDADE(KM/L): 10.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root33, text="CONSUMO ESTRADA(KM/L): 13.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root33.mainloop()
+
+
+def click_btnespecificacoescorolla():
+    root32 = Tk()
+    root32.geometry("750x680+1000+100")
+    root32["bg"] = "darkslategray"
+
+    lblespe1 = Label(root32, text="ESPECIFICAÇÕES DO CARRO: FORD COROLLA", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root32, text="MOTOR: 1.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root32, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root32, text="CONSUMO CIDADE(KM/L): 11.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root32, text="CONSUMO ESTRADA(KM/L): 13.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root32.mainloop()
+
+
+def click_btnespecificacoessandeiro():
+    root31 = Tk()
+    root31.geometry("750x680+1000+100")
+    root31["bg"] = "darkslategray"
+
+    lblespe1 = Label(root31, text="ESPECIFICAÇÕES DO CARRO: RENAULT SANDEIRO", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root31, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root31, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root31, text="CONSUMO CIDADE(KM/L): 14.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root31, text="CONSUMO ESTRADA(KM/L): 14.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root31.mainloop()
+
+
+def click_btnespecificacoesfocus():
+    root30 = Tk()
+    root30.geometry("750x680+1000+100")
+    root30["bg"] = "darkslategray"
+
+    lblespe1 = Label(root30, text="ESPECIFICAÇÕES DO CARRO: FORD FOCUS", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root30, text="MOTOR: 1.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root30, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root30, text="CONSUMO CIDADE(KM/L): 10.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root30, text="CONSUMO ESTRADA(KM/L): 13.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root30.mainloop()
+
+
+def click_btnespecificacoesversa():
+    root29 = Tk()
+    root29.geometry("750x680+1000+100")
+    root29["bg"] = "darkslategray"
+
+    lblespe1 = Label(root29, text="ESPECIFICAÇÕES DO CARRO: NISSA VERSA", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root29, text="MOTOR: 1.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root29, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root29, text="CONSUMO CIDADE(KM/L): 12.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root29, text="CONSUMO ESTRADA(KM/L): 14.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root29.mainloop()
+
+
+def click_btnespecificacoesvoyage():
+    root28 = Tk()
+    root28.geometry("750x680+1000+100")
+    root28["bg"] = "darkslategray"
+
+    lblespe1 = Label(root28, text="ESPECIFICAÇÕES DO CARRO: VOLKSWAGEN VOYAGE", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root28, text="MOTOR: 1.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root28, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root28, text="CONSUMO CIDADE(KM/L): 7.5", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root28, text="CONSUMO ESTRADA(KM/L): 9.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root28.mainloop()
+
+
+def click_btnespecificacoeshb20s():
+    root27 = Tk()
+    root27.geometry("750x680+1000+100")
+    root27["bg"] = "darkslategray"
+
+    lblespe1 = Label(root27, text="ESPECIFICAÇÕES DO CARRO: HYUNDAI HB20 S", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root27, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root27, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root27, text="CONSUMO CIDADE(KM/L): 12", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root27, text="CONSUMO ESTRADA(KM/L): 14", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root27.mainloop()
+
+
+def click_btnespecificacoesprisma():
+    root26 = Tk()
+    root26.geometry("750x680+1000+100")
+    root26["bg"] = "darkslategray"
+
+    lblespe1 = Label(root26, text="ESPECIFICAÇÕES DO CARRO: CHEVROLET PRISMA", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root26, text="MOTOR: 1.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root26, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root26, text="CONSUMO CIDADE(KM/L): 12.9", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root26, text="CONSUMO ESTRADA(KM/L): 15.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root26.mainloop()
+
+
+def especificacoeshb20():
+    root25= Tk()
+    root25.geometry("750x680+1000+100")
+    root25["bg"] = "darkslategray"
+
+    lblespe1 = Label(root25, text="ESPECIFICAÇÕES DO CARRO: HYUNDAI HB20", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
+    lblespe2 = Label(root25, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe3 = Label(root25, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
+    lblespe4 = Label(root25, text="CONSUMO CIDADE(KM/L): 12.5", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root25, text="CONSUMO ESTRADA(KM/L): 14.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
+                                                                                                                 y=230)
+
+
+    root25.mainloop()
+
+
+def click_btnespecificacoesonix():
+    root24 = Tk()
+    root24.geometry("750x680+1000+100")
+    root24["bg"] = "darkslategray"
+
+    lblespe1 = Label(root24, text="ESPECIFICAÇÕES DO CARRO: CHEVROLET ONIX", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root24, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root24, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root24, text="CONSUMO CIDADE(KM/L): 8.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root24, text="CONSUMO ESTRADA(KM/L): 10.5", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root24.mainloop()
+
+
+def click_btnespecificacoesfordka():
+    root23= Tk()
+    root23.geometry("750x680+1000+100")
+    root23["bg"] = "darkslategray"
+
+    lblespe1 = Label(root23, text="ESPECIFICAÇÕES DO CARRO: FORD KA", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
+    lblespe2 = Label(root23, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe3 = Label(root23, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
+    lblespe4 = Label(root23, text="CONSUMO CIDADE(KM/L): 9.3", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root23, text="CONSUMO ESTRADA(KM/L): 12.2", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
+                                                                                                                 y=230)
+
+
+    root23.mainloop()
+
+
+def click_btnespecificacoesgol():
+    root22 = Tk()
+    root22.geometry("750x680+1000+100")
+    root22["bg"] = "darkslategray"
+
+    lblespe1 = Label(root22, text="ESPECIFICAÇÕES DO CARRO: WOLKSWAGEN GOL", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root22, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root22, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root22, text="CONSUMO CIDADE(KM/L): 8.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root22, text="CONSUMO ESTRADA(KM/L): 10.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root22.mainloop()
+
+
+def click_btnespecificacoesfordkaH():
+    root21 = Tk()
+    root21.geometry("750x680+1000+100")
+    root21["bg"] = "darkslategray"
+
+    lblespe1 = Label(root21, text="ESPECIFICAÇÕES DO CARRO: FORD KA HATCH", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root21, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root21, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root21, text="CONSUMO CIDADE(KM/L): 9.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root21, text="CONSUMO ESTRADA(KM/L): 10.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100,
+                                       y=230)
+
+    root21.mainloop()
+
+def click_btnespecificacoesmobi():
+    root20 = Tk()
+    root20.geometry("750x680+1000+100")
+    root20["bg"] = "darkslategray"
+
+    lblespe1 = Label(root20, text="ESPECIFICAÇÕES DO CARRO: FIAT MOBI", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root20, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root20, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root20, text="CONSUMO CIDADE(KM/L): 9.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root20, text="CONSUMO ESTRADA(KM/L): 10.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=230)
+
+    root20.mainloop()
+
+
+def click_btnespecificacoesUno():
+    root19= Tk()
+    root19.geometry("750x680+1000+100")
+    root19["bg"] = "darkslategray"
+
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: FIAT NOVO UNO", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 9.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 10.6", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
+                                                                                                                 y=230)
+
+
+    root19.mainloop()
+
+
+def click_btnMOTO():
+
+    root17 = Tk()
+    root17.geometry("750x680+1000+100")
+    root17["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblbiz = Label(root17, text="HONDA BIZ 125CC: R$1,75(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=100)
+    lblcg160 = Label(root17, text="HONDA CG 160CC: R$2,25(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=190)
+    lblfazer250 = Label(root17, text="YAMAHA FAZER: R$2,75(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=280)
+    lbltomahawk = Label(root17, text="DODGE TOMAHAWK: R$50,75(H)", bg="darkslategray", fg="black",
+                        font=("arial", 10, "bold")).place(x=200, y=370)
+
+    # ================== BOTOES ========================
+
+    btnbiz = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOESbiz = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoesbiz, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+    btnALUGUELcg160 = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=220)
+    btnESPECIFICACOEScg160 = Button(root17, text="ESPECIFICAÇÕES",command=click_btnespecificacoescg, font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=250)
+    btnALUGUELfazer = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=310)
+    btnESPECIFICACOESfazer = Button(root17, text="ESPECIFICAÇÕES",command=click_btnespecificacoesfazer, font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=340)
+    btnALUGUELalltomahawk = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                                fg="black").place(x=200, y=400)
+    btnESPECIFICACOEStomahawk = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoesdodge, font=("arial", 8, "bold"), width=17, bg="gray",
+                                       fg="black").place(x=200, y=430)
+
+    root17.mainloop()
+
+def click_btnSUVGRANDE():
+
+    root16 = Tk()
+    root16.geometry("750x680+1000+100")
+    root16["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lbljeep = Label(root16, text="JEEP COMPASS LONGITUDE: R$23,00(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=100)
+    lbltrailblazer = Label(root16, text="CHEVROLET TRAILBLAZER: R$26,00(H)", bg="darkslategray", fg="black",
+                        font=("arial", 10, "bold")).place(x=200, y=190)
+
+    # ================== BOTOES ========================
+
+    btnjeep = Button(root16, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOESjeep = Button(root16, text="ESPECIFICAÇÕES", command=click_btnespecificacoeslongitude, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+    btnALUGUELtrailblazer= Button(root16, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                                fg="black").place(x=200, y=220)
+    btnESPECIFICACOEStrailblazer = Button(root16, text="ESPECIFICAÇÕES", command=click_btnespecificacoestrial, font=("arial", 8, "bold"), width=17, bg="gray",
+                                       fg="black").place(x=200, y=250)
+
+    root16.mainloop()
+
+
+def click_btnSUV():
+
+    root15 = Tk()
+    root15.geometry("750x680+1000+100")
+    root15["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblduster = Label(root15, text="RENAULT DUSTER: R$10,00(H)", bg="darkslategray", fg="black",
+                   font=("arial", 10, "bold")).place(x=200, y=100)
+    lblecosport = Label(root15, text="FORD ECOSPORT: R$10,30(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=190)
+
+    # ================== BOTOES ========================
+
+    btnduster = Button(root15, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                    fg="black").place(x=200, y=130)
+    btnESPECIFICACOESduster = Button(root15, text="ESPECIFICAÇÕES", command=click_btnespecificacoesduster, font=("arial", 8, "bold"), width=17, bg="gray",
+                                  fg="black").place(x=200, y=160)
+    btnALUGUELecosport = Button(root15, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=220)
+    btnESPECIFICACOESecosport = Button(root15, text="ESPECIFICAÇÕES", command=click_btnespecificacoeseco, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=250)
+
+    root15.mainloop()
+
+
+def click_btnPICKUPS():
+
+    root14 = Tk()
+    root14.geometry("750x680+1000+100")
+    root14["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblS10 = Label(root14, text="CHEVROLET GM S10: R$22,00(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=100)
+    lblranger = Label(root14, text="FORD RANGER: R$21,00(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=190)
+
+    # ================== BOTOES ========================
+
+    btns10 = Button(root14, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                      fg="black").place(x=200, y=130)
+    btnESPECIFICACOESs10 = Button(root14, text="ESPECIFICAÇÕES", command=click_btnespecificacoess10, font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=160)
+    btnALUGUELranger = Button(root14, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=220)
+    btnESPECIFICACOESranger = Button(root14, text="ESPECIFICAÇÕES", command=click_btnespecificacoesranger, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=250)
+
+    root14.mainloop()
+
+
+
+def click_btnUTILITARIO():
+
+    root13 = Tk()
+    root13.geometry("750x680+1000+100")
+    root13["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lbloroch = Label(root13, text="RENAULT OROCH: R$10,00(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=100)
+    lblstrada = Label(root13, text="FIAT STRADA: R$9,70(H)", bg="darkslategray", fg="black",
+                    font=("arial", 10, "bold")).place(x=200, y=190)
+
+    # ================== BOTOES ========================
+
+    btnoroch = Button(root13, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                      fg="black").place(x=200, y=130)
+    btnESPECIFICACOESoroch = Button(root13, text="ESPECIFICAÇÕES", command=click_btnespecificacoesoroch, font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=160)
+    btnALUGUELstrada = Button(root13, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                           fg="black").place(x=200, y=220)
+    btnESPECIFICACOESstrada = Button(root13, text="ESPECIFICAÇÕES", command=click_btnespecificacoesoroch, font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=250)
+
+    root13.mainloop()
+
+def click_btnVANS():
+
+    root12 = Tk()
+    root12.geometry("750x680+1000+100")
+    root12["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lbldoblo = Label(root12, text="FIAT DOPLO: R$12,30(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=100)
+    lblspin = Label(root12, text="CHEVROLET SPIN: R$12,00(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=190)
+
+    # ================== BOTOES ========================
+
+    btndoplo= Button(root12, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOESdoplo = Button(root12, text="ESPECIFICAÇÕES", command=click_btnespecificacoesdoblo, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+    btnALUGUEspin = Button(root12, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=220)
+    btnESPECIFICACOESspin = Button(root12, text="ESPECIFICAÇÕES", command=click_btnespecificacoesspin, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=250)
+
+    root12.mainloop()
+
+
+def click_btnLUXO():
+
+    root11 = Tk()
+    root11.geometry("750x680+1000+100")
+    root11["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lbllancer = Label(root11, text="MITSUBISHI LANCER: R$15,60(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=100)
+    lblsentra = Label(root11, text="NISSAN SENTRA: R$15,60(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=190)
+
+    # ================== BOTOES ========================
+
+    btnlancer = Button(root11, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOESlancer = Button(root11, text="ESPECIFICAÇÕES", command=click_btnespecificacoeslancer, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+    btnALUGUELsentra = Button(root11, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=220)
+    btnESPECIFICACOESsentra = Button(root11, text="ESPECIFICAÇÕES", command=click_btnespecificacoessentra, font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=250)
+
+    root11.mainloop()
+
+
+def click_btnFULLSIZE():
+
+    root10 = Tk()
+    root10.geometry("750x680+1000+100")
+    root10["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblcorola = Label(root10, text="TOYOTA COROLA: R$11,00(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=100)
+    lbljetta = Label(root10, text="VOLKSWAGEN JETTA: R$11,00(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=190)
+    lblcruze = Label(root10, text="CHEVROLET CRUZE: R$11,20(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=280)
+    lblallspace = Label(root10, text="TIGUAN ALLSPACE: R$15,20(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=370)
+
+    # ================== BOTOES ========================
+
+    btncorola = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOEScorola = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoescorolla, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+    btnALUGUELjetta = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=220)
+    btnESPECIFICACOESjetta = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoesjetta, font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=250)
+    btnALUGUELcruze = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=310)
+    btnESPECIFICACOEScruze = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoescruze, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=340)
+    btnALUGUELallspace = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=400)
+    btnESPECIFICACOESallspace = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoesallspace, font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=430)
+
+    root10.mainloop()
+
+
+def click_btnMEDIO():
+
+    root9=Tk()
+    root9.geometry("750x680+1000+100")
+    root9["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblsandero = Label(root9, text="RENAULT SANDERO: R$6,00(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=100)
+
+    # ================== BOTOES ========================
+
+    btnsandero = Button(root9, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOESsandero = Button(root9, text="ESPECIFICAÇÕES", command=click_btnespecificacoessandeiro, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+
+    root9.mainloop()
+
+
+def click_btnINTERMEDIARIOS():
+
+    root8=Tk()
+    root8.geometry("750x680+1000+100")
+    root8["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblprisma = Label(root8, text="Chevrolet Prisma: R$7,00(H)", bg="darkslategray", fg="black",
+                   font=("arial", 10, "bold")).place(x=200, y=100)
+    lblhb20S = Label(root8, text="HYUNDAI HB 20S: R$7,00(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=190)
+    lblvoyage = Label(root8, text="VOLKSWAGEN VOYAGE: R$7,20(H)", bg="darkslategray", fg="black",
+                         font=("arial", 10, "bold")).place(x=200, y=280)
+    lblversa = Label(root8, text="NISSAN VERSA: R$7,30(H)", bg="darkslategray", fg="black",
+                       font=("arial", 10, "bold")).place(x=200, y=370)
+    lblfocus = Label(root8, text="FORD FOCUS: R$7,80(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=460)
+
+    # ================== BOTOES ========================
+
+    btnprisma = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                    fg="black").place(x=200, y=130)
+    btnESPECIFICACOESprisma = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesprisma, font=("arial", 8, "bold"), width=17, bg="gray",
+                                  fg="black").place(x=200, y=160)
+    btnALUGUELhb20S = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=220)
+    btnESPECIFICACOEShb20S = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoeshb20s, font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=250)
+    btnALUGUELvoyage = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                                 fg="black").place(x=200, y=310)
+    btnESPECIFICACOESvoyage = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesvoyage, font=("arial", 8, "bold"), width=17, bg="gray",
+                                        fg="black").place(x=200, y=340)
+    btnALUGUELversa = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                               fg="black").place(x=200, y=400)
+    btnESPECIFICACOESversa = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesversa, font=("arial", 8, "bold"), width=17, bg="gray",
+                                      fg="black").place(x=200, y=430)
+    btnfocus = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                    fg="black").place(x=200, y=490)
+    btnESPECIFICACOESfocus = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesfocus, font=("arial", 8, "bold"), width=17, bg="gray",
+                                      fg="black").place(x=200, y=520)
+
+    root8.mainloop()
+
+def click_btnCOMPACTOS():
+
+    root7=Tk()
+    root7.geometry("750x680+1000+100")
+    root7["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblgol = Label(root7, text="Wolkswagen Gol: R$6,00(H)", bg="darkslategray", fg="black",
+                     font=("arial", 10, "bold")).place(x=200, y=100)
+    lblfordka = Label(root7, text="FORD KA: R$6,00(H)", bg="darkslategray", fg="black",
+                            font=("arial", 10, "bold")).place(x=200, y=190)
+    lblchevrolet = Label(root7, text="CHEVROLET ONIX: R$6,20(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=280)
+    lblHYUNDAI = Label(root7, text="HYUNDAI HB20: R$6,50(H)", bg="darkslategray", fg="black",
+                      font=("arial", 10, "bold")).place(x=200, y=370)
+
+    # ================== BOTÕES ========================
+
+    btngol = Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                            fg="black").place(x=200, y=130)
+    btnESPECIFICACOESgol = Button(root7, text="ESPECIFICAÇÕES",command=click_btnespecificacoesgol, font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=160)
+    btnALUGUELfordka= Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                            fg="black").place(x=200, y=220)
+    btnESPECIFICACOESfordka = Button(root7, text="ESPECIFICAÇÕES",command=click_btnespecificacoesfordka, font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=250)
+    btnALUGUELchevrolet = Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=310)
+    btnESPECIFICACOESchevrolet = Button(root7, text="ESPECIFICAÇÕES", command=click_btnespecificacoesonix, font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=340)
+    btnALUGUELhyundai = Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=400)
+    btnESPECIFICACOEShyundai = Button(root7, text="ESPECIFICAÇÕES", command=especificacoeshb20, font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=430)
+
+    root7.mainloop()
+
+
+def click_btnECONOMICOAR():
+
+    root6 = Tk()
+    root6.geometry("750x680+1000+100")
+    root6["bg"] = "darkslategray"
+
+    # ================== LABELS ========================
+
+    lblfordk = Label(root6, text="FORD KA HATCH : R$5,40(H)", bg="darkslategray", fg="black",
+                       font=("arial", 10, "bold")).place(x=200, y=100)
+    lblfiatmobilike = Label(root6, text="FIAT MOBI LIKE: R$5,20(H)", bg="darkslategray", fg="black",
+                        font=("arial", 10, "bold")).place(x=200, y=220)
+
+    # ================== BOTÕES ========================
+
+    btnALUGUELfordk = Button(root6, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                            fg="black").place(x=200, y=130)
+    btnESPECIFICACOESfordk = Button(root6, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), width=17, command=click_btnespecificacoesfordkaH, bg="gray",
+                                   fg="black").place(x=200, y=160)
+    btnALUGUELlike = Button(root6, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                            fg="black").place(x=200, y=250)
+    btnESPECIFICACOESlike = Button(root6, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), command=click_btnespecificacoesmobi, width=17, bg="gray",
+                                   fg="black").place(x=200, y=280)
+
+    root6.mainloop()
+
+def click_btnECONOMICO():
+
+    root5 = Tk()
+    root5.geometry("750x680+1000+100")
+    root5["bg"] = "darkslategray"
+
+    #================== LABELS ========================
+
+    lblfiatuno = Label(root5, text="FIAT UNO NOVO: R$4,40(H)", bg="darkslategray", fg="black",
+                       font=("arial", 10, "bold")).place(x=200, y=100)
+    lblfiatmobi = Label(root5, text="FIAT MOBI: R$4,20(H)", bg="darkslategray", fg="black",
+                       font=("arial", 10, "bold")).place(x=200, y=220)
+
+
+
+    #================== BOTÕES ========================
+
+    btnALUGUELfiat = Button(root5, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+                        fg="black").place(x=200, y=130)
+    btnESPECIFICACOESfiat = Button(root5, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), width=17, command=click_btnespecificacoesUno, bg="gray",
+                        fg="black").place(x=200, y=160)
+    btnALUGUELmobi = Button(root5, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, command=click_btnespecificacoesmobi, bg="gray",
+                        fg="black").place(x=200, y=250)
+    btnESPECIFICACOESmobi = Button(root5, text="ESPECIFICAÇÕES", command=click_btnespecificacoesmobi, font=("arial", 8, "bold"), width=17, bg="gray",
+                        fg="black").place(x=200, y=280)
+
+    root5.mainloop()
+
+
+
+
+
+def click_btnCARRO():
+
+    global root4
+    root3.destroy()
+    root4= Tk()
+    root4.geometry("750x680+1000+100")
+    root4["bg"] = "darkslategray"
+
+    #===================== LABELS ===============================
+
+    lblCATEGORIAS = Label(root4, text="CATEGORIAS", font=("arial", 20, "bold"), bg="darkslategray", fg="black").place(x=295, y=100)
+
+    #===================== BOTÕES ===============================
+
+    btnECONOMICO= Button(root4, text="ECONÔMICO SEM AR", bg="gray", fg="white", font=("arial", 13, "bold"), command=click_btnECONOMICO, width=30).place(
+        x=230,y=170)
+    btnECONOMICOAR = Button(root4, text="ECONÔMICO COM AR", bg="gray", fg="white", font=("arial", 13, "bold"), command=click_btnECONOMICOAR, width=30).place(
+        x=230, y=210)
+    btNCOMPACTOS= Button(root4, text="COMPACTOS", bg="gray", fg="white", font=("arial", 13, "bold"), command=click_btnCOMPACTOS, width=30).place(
+        x=230, y=250)
+    btnINTERMEDIARIOS = Button(root4, text="INTERMEDIARIOS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnINTERMEDIARIOS).place(
+        x=230, y=290)
+    btnMEDIO = Button(root4, text="MEDIO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnMEDIO).place(
+        x=230, y=330)
+    btnFULLSIZE = Button(root4, text="FULLSIZE", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnFULLSIZE).place(
+        x=230, y=370)
+    btnLUXO = Button(root4, text="LUXO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnLUXO).place(
+        x=230, y=410)
+    btnVANS = Button(root4, text="VANS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnVANS).place(
+        x=230, y=450)
+    btnUTILITARIO = Button(root4, text="UTILITARIO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnUTILITARIO).place(
+        x=230, y=490)
+    btnPICKUPS = Button(root4, text="PICK UPS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnPICKUPS).place(
+        x=230, y=530)
+    btnSUV = Button(root4, text="SUV", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnSUV).place(
+        x=230, y=570)
+    btnSUVGRANDE = Button(root4, text="SUV GRANDE", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnSUVGRANDE).place(
+        x=230, y=610)
+
+
+
+def click_btnENTRAR():
+    global root3
+    root3 = Tk()
+    root3.geometry("750x620+1000+100")
+    root3["bg"] = "darkslategray"
+
+    lbl1 = Label(root3, text="ESCOLHA O TIPO DE VEICULO QUE VOCÊ DESEJA:", font=("arial", 16, "bold"), fg="black", bg="darkslategray").place(x=130, y=140)
+    btnCarro = Button(root3, text="CARRO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white", command=click_btnCARRO).place(x=270, y=240)
+    btnMoto = Button(root3, text="MOTO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white", command=click_btnMOTO).place(x=270, y=290)
+
+    root3.mainloop()
+
+
+
+def click_btnCADLOG():
+
+    root2.destroy()
+    root = Tk()
+    root.title("Tela de Login")
+    root.geometry("750x620+1000+100")
+    root["bg"] = "darkslategray"
+    # ================= VARIAVEIS ENTRYS ==================================
+
+    varcpf = StringVar()
+    varsenha = StringVar()
+
+    # ================== LABELS ====================================
+
+    lbl_login = Label(root, text="FAÇA SEU LOGIN", font=("arial", 18, "bold"), bg="darkslategray", fg="black").place(
+        x=262, y=200)
+    lblcpf = Label(root, text="CPF:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230,
+                                                                                                                 y=280)
+    lblsenha = Label(root, text="SENHA:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(
+        x=230, y=330)
+
+    # ======================== ENTRYS ==============================
+    cpf_LOGIN = Entry(root, textvariable=varcpf, font=("times new roman", 13, "bold"), width=30, fg="black").place(
+        x=230, y=300)
+    senha_LOGIN = Entry(root, textvariable=varsenha, font=("times new roman", 13, "bold"), width=30, fg="black").place(
+        x=230, y=350)
+
+    # ======================= BOTÕES ===============================
+    btn_entrar = Button(root, text="ENTRAR", bg="gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnENTRAR).place(x=320,y=400)
+
+    root.mainloop()
+
+
+def click_btnLOGIN():
+
+    global root
+    janela.destroy()
+    root = Tk()
+    root.title("Tela de Login")
+    root.geometry("750x620+1000+100")
+    root["bg"] = "darkslategray"
+    # ================= VARIAVEIS ENTRYS ==================================
+
+    varcpf = StringVar()
+    varsenha = StringVar()
+
+    #================== LABELS ====================================
+
+    lbl_login = Label(root, text="FAÇA SEU LOGIN", font=("arial", 18, "bold"), bg="darkslategray", fg= "black").place(x=262, y=200)
+    lblcpf = Label(root, text="CPF:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230, y=280)
+    lblsenha = Label(root, text="SENHA:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230, y=330)
+
+    #======================== ENTRYS ==============================
+    cpf_LOGIN = Entry(root, textvariable=varcpf, font=("times new roman", 13, "bold"), width=30, fg="black").place(x=230, y=300)
+    senha_LOGIN = Entry(root, textvariable=varsenha, font=("times new roman", 13, "bold"), width=30, fg="black").place(x=230, y=350)
+
+    #======================= BOTÕES ===============================
+    btn_entrar = Button(root, text="ENTRAR", bg= "gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnENTRAR).place(x=320,y=400)
+
+    root.mainloop()
+
+def click_btnCADASTRO():
+
+    global root2
+    janela.destroy()
+    root2 = Tk()
+    root2.title("CADASTRE-SE")
+    root2.geometry("750x620+1000+100")
+    root2["bg"] = "darkslategray"
+    #===================== LABELS =========================
+
+    lblCADASTRO = Label(root2, text="CADASTRO", font=("arial", 20, "bold"), bg="darkslategray", fg= "black").place(x=288, y=180)
+    lblNOME = Label(root2, text="Adicione seu nome:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=260)
+    lblCPF = Label(root2, text="Adicione seu CPF:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=310)
+    lblSENHA = Label(root2, text="Adicione sua senha:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=360)
+    lblSENHA2 = Label(root2, text="Confirme sua senha:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=410)
+
+    #===================== ENTRYS =========================
+
+    txtNOME = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=280)
+    txtCPF = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=330)
+    txtSENHA = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=380)
+    txtSENHA2 = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=430)
+
+    def click_btnCADASTRAR(senha1, senha2):
+        if senha1 != senha2:
+            Label(root2, text="AS SENHAS INFORMADAS NÃO SÃO COMPATÍVEIS", font=("times new roman", 18, "bold")).place(x=300, y=50)
+
+    #====================  BOTÕES =========================
+
+    btnCADASTRAR = Button(root2, text="CADASTRAR", bg="gray", font=("arial", 12, "bold"), width=15, command=click_btnCADASTRAR(txtSENHA, txtSENHA2), fg="white").place(x=288, y=490)
+    btnCADASTRARLOG = Button(root2, text="LOGIN", bg="gray", font=("arial", 12, "bold"), width=15, command=click_btnCADLOG, fg="white").place(x=288, y=530)
+
+    root2.mainloop()
+
+
+global janela
+janela = Tk()
+cont = 0
+#LxA+(distancia da janela ate a lateral esquerda)+(distancia da janela ate o topo)
+janela.geometry("750x620+1000+100")
+
+janela.title("Tela Inicial")
+janela["bg"] = "darkslategray"
+
+date1 = StringVar()
+time1 = StringVar()
+
+date1.set(time.strftime("%d/%m/%Y"))
+time1.set(time.strftime("%H:%M"))
+#========== FOTOS ===============================
+
+fotoInicial = PhotoImage(file="fiatUnoNovo.png")
+
+#============= LABELS ===========================
+
+lb1image0 = Label(janela, image=fotoInicial)
+
+lbltime = Label(janela, textvariable=time1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
+lbltime.place(x=671, y=574)
+lbldate = Label(janela, textvariable=date1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
+lbldate.place(x=645, y=595)
+
+#============= BOTÕES ===========================
+
+btnLOGIN = Button(janela, text="LOGIN", font=("arial", 16, "bold"), fg="white", width=20, command=click_btnLOGIN, bg="gray")
+btnLOGIN.place(x=250, y=400)
+btnCADASTRO = Button(janela, text="CADASTRAR-SE", font=("arial", 16, "bold"), fg="white", width=20, command=click_btnCADASTRO, bg="gray")
+btnCADASTRO.place(x=250, y=450)
+
+
+janela.mainloop()
