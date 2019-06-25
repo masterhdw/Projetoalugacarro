@@ -1,0 +1,53 @@
+from tkinter import *
+from datetime import *
+import time
+
+
+def horainicio():
+    global tempo
+    import datetime
+    date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
+    tempo = date
+    return date
+
+def horafinal():
+    global tempofim
+    import datetime
+    date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
+    tempofim = date
+    return date
+
+def diferencahora(horaini, horafim):
+    s = horaini
+    t = horafim
+    f = '%Y/%m/%d %H:%M:%S'
+    dif = ((datetime.strptime(t, f) - datetime.strptime(s, f)).total_seconds())
+    return dif/3600
+
+def click_btnValor():
+    tempodiferença = diferencahora(tempo, tempofim)
+    lblx = Label(root18, textvariable=tempodiferença, bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=340)
+
+
+
+root18= Tk()
+root18.geometry("750x680+1000+100")
+root18["bg"] = "darkslategray"
+
+#======================= LABELS =========================
+
+lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=200)
+lbl2 = Label(root18, text="Valor Total:",  bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+#======================= BOTOES =========================
+
+btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=horainicio).place(x=100, y=150)
+btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=horafinal).place(x=100, y=250)
+btnValor= Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"), command=click_btnValor).place(x=100, y=630)
+
+# ===================== ENTRYS ==========================
+
+
+
+root18.mainloop()
