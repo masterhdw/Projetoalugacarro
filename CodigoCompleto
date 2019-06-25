@@ -1,66 +1,1434 @@
 import time
 from tkinter import *
-from datetime import datetime
+
+global lista
+global a
+global b
+lista = [0.0, 0.0]
+
+def click_btnComeçarAlugueldodge():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*50.75)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
 
 
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelfazer():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*2.75)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelcg160():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*2.25)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelbiz():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*1.75)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelblazer():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*26.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguellongitude():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*23.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAlugueleco():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*10.3)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelduster():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*10.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelranger():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*21.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguels10():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*22.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelstrada():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*9.7)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAlugueloroch():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*10.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelspin():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*12.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAlugueldoblo():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*12.3)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelsentra():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*15.6)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguellancer():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*15.6)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelallspace():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*15.2)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelcruze():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*11.2)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAlugueljetta():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*11.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelcorola():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*11.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelsandero():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*6.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelfocus():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*7.8)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelversa():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*7.3)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelvoyage():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*7.2)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelhb20s():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*7.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelprisma():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*7.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelhb20():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*6.5)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelonix():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*6.2)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelka():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*6.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelgol():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*6.0)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelhatch():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*5.4)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black",font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguellike():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*5.2)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black",font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
+
+
+def click_btnComeçarAluguelmobi():
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*4.2)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black",font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
+
+
+    # ======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+    root18.mainloop()
 
 def click_btnespecificacoesdodge():
-    root19= Tk()
+    root19 = Tk()
     root19.geometry("750x680+1000+100")
     root19["bg"] = "darkslategray"
 
-    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: DODGE TOMAHAWK", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root19, text="MOTOR: 8275cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
-    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
-
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: DODGE TOMAHAWK", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 8275cc", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
 
     root19.mainloop()
 
 
 def click_btnespecificacoesfazer():
-    root19= Tk()
+    root19 = Tk()
     root19.geometry("750x680+1000+100")
     root19["bg"] = "darkslategray"
 
-    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: YAMAHA FAZER", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root19, text="MOTOR: 250cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
-    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
-    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 22.3", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 21.9", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
-                                                                                                                 y=230)
-
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: YAMAHA FAZER", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 250cc", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 22.3", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 21.9", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100,
+                                                           y=230)
 
     root19.mainloop()
 
 
 def click_btnespecificacoesbiz():
-    root19= Tk()
+    root19 = Tk()
     root19.geometry("750x680+1000+100")
     root19["bg"] = "darkslategray"
 
-    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: HONDA BIZ", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root19, text="MOTOR: 125cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
-    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
-    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 43.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 45.2", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
-                                                                                                                 y=230)
-
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: HONDA BIZ", font=("arial", 16, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 125cc", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 43.1", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 45.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100,
+                                                           y=230)
 
     root19.mainloop()
 
 
 def click_btnespecificacoescg():
-    root19= Tk()
+    root19 = Tk()
     root19.geometry("750x680+1000+100")
     root19["bg"] = "darkslategray"
 
-    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: HONDA CG 160", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root19, text="MOTOR: 160cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
-    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
-    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 32.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 33.2", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
-                                                                                                                 y=230)
-
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: HONDA CG 160", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 160cc", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 32.1", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 33.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100,
+                                                           y=230)
 
     root19.mainloop()
 
@@ -78,7 +1446,8 @@ def click_btnespecificacoestrial():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.8", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.1", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -98,7 +1467,8 @@ def click_btnespecificacoeslongitude():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 6.1", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.5", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.5", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -118,7 +1488,8 @@ def click_btnespecificacoeseco():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.1", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 8.9", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 8.9", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -136,9 +1507,11 @@ def click_btnespecificacoesduster():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 11.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 11.1", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 11.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 11.4", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -158,7 +1531,8 @@ def click_btnespecificacoesranger():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 6.9", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 8.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 8.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -176,9 +1550,11 @@ def click_btnespecificacoess10():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 13.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 13.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 14.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 14.3", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -198,7 +1574,8 @@ def click_btnespecificacoesstrada():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.0", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.6", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -218,7 +1595,8 @@ def click_btnespecificacoesoroch():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 7.6", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 7.7", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -238,7 +1616,8 @@ def click_btnespecificacoesspin():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 8.0", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.3", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -258,7 +1637,8 @@ def click_btnespecificacoesdoblo():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 8", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 9.3", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -278,7 +1658,8 @@ def click_btnespecificacoessentra():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 9.9", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 12.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 12.6", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -296,9 +1677,11 @@ def click_btnespecificacoeslancer():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root36, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root36, text="CONSUMO CIDADE(KM/L): 10.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root36, text="CONSUMO CIDADE(KM/L): 10.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root36, text="CONSUMO ESTRADA(KM/L): 11.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root36, text="CONSUMO ESTRADA(KM/L): 11.7", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -316,9 +1699,11 @@ def click_btnespecificacoesallspace():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root35, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root35, text="CONSUMO CIDADE(KM/L): 10.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root35, text="CONSUMO CIDADE(KM/L): 10.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root35, text="CONSUMO ESTRADA(KM/L): 11.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root35, text="CONSUMO ESTRADA(KM/L): 11.7", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -338,7 +1723,8 @@ def click_btnespecificacoescruze():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root34, text="CONSUMO CIDADE(KM/L): 7.6", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root34, text="CONSUMO ESTRADA(KM/L): 9.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root34, text="CONSUMO ESTRADA(KM/L): 9.6", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -356,9 +1742,11 @@ def click_btnespecificacoesjetta():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root33, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root33, text="CONSUMO CIDADE(KM/L): 10.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root33, text="CONSUMO CIDADE(KM/L): 10.4", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root33, text="CONSUMO ESTRADA(KM/L): 13.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root33, text="CONSUMO ESTRADA(KM/L): 13.8", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -376,9 +1764,11 @@ def click_btnespecificacoescorolla():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root32, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root32, text="CONSUMO CIDADE(KM/L): 11.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root32, text="CONSUMO CIDADE(KM/L): 11.4", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root32, text="CONSUMO ESTRADA(KM/L): 13.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root32, text="CONSUMO ESTRADA(KM/L): 13.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -396,9 +1786,11 @@ def click_btnespecificacoessandeiro():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root31, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root31, text="CONSUMO CIDADE(KM/L): 14.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root31, text="CONSUMO CIDADE(KM/L): 14.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root31, text="CONSUMO ESTRADA(KM/L): 14.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root31, text="CONSUMO ESTRADA(KM/L): 14.1", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -416,9 +1808,11 @@ def click_btnespecificacoesfocus():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root30, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root30, text="CONSUMO CIDADE(KM/L): 10.8", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root30, text="CONSUMO CIDADE(KM/L): 10.8", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root30, text="CONSUMO ESTRADA(KM/L): 13.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root30, text="CONSUMO ESTRADA(KM/L): 13.6", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -436,9 +1830,11 @@ def click_btnespecificacoesversa():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root29, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root29, text="CONSUMO CIDADE(KM/L): 12.6", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root29, text="CONSUMO CIDADE(KM/L): 12.6", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root29, text="CONSUMO ESTRADA(KM/L): 14.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root29, text="CONSUMO ESTRADA(KM/L): 14.4", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -458,7 +1854,8 @@ def click_btnespecificacoesvoyage():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root28, text="CONSUMO CIDADE(KM/L): 7.5", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root28, text="CONSUMO ESTRADA(KM/L): 9.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root28, text="CONSUMO ESTRADA(KM/L): 9.4", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -496,9 +1893,11 @@ def click_btnespecificacoesprisma():
                      fg="black").place(x=100, y=140)
     lblespe3 = Label(root26, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=170)
-    lblespe4 = Label(root26, text="CONSUMO CIDADE(KM/L): 12.9", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe4 = Label(root26, text="CONSUMO CIDADE(KM/L): 12.9", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root26, text="CONSUMO ESTRADA(KM/L): 15.4", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root26, text="CONSUMO ESTRADA(KM/L): 15.4", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -506,17 +1905,21 @@ def click_btnespecificacoesprisma():
 
 
 def especificacoeshb20():
-    root25= Tk()
+    root25 = Tk()
     root25.geometry("750x680+1000+100")
     root25["bg"] = "darkslategray"
 
-    lblespe1 = Label(root25, text="ESPECIFICAÇÕES DO CARRO: HYUNDAI HB20", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root25, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
-    lblespe3 = Label(root25, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
-    lblespe4 = Label(root25, text="CONSUMO CIDADE(KM/L): 12.5", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
-    lblespe5 = Label(root25, text="CONSUMO ESTRADA(KM/L): 14.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
-                                                                                                                 y=230)
-
+    lblespe1 = Label(root25, text="ESPECIFICAÇÕES DO CARRO: HYUNDAI HB20", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root25, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root25, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root25, text="CONSUMO CIDADE(KM/L): 12.5", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=200)
+    lblespe5 = Label(root25, text="CONSUMO ESTRADA(KM/L): 14.1", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100,
+                                                           y=230)
 
     root25.mainloop()
 
@@ -534,7 +1937,8 @@ def click_btnespecificacoesonix():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root24, text="CONSUMO CIDADE(KM/L): 8.8", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root24, text="CONSUMO ESTRADA(KM/L): 10.5", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root24, text="CONSUMO ESTRADA(KM/L): 10.5", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -542,17 +1946,21 @@ def click_btnespecificacoesonix():
 
 
 def click_btnespecificacoesfordka():
-    root23= Tk()
+    root23 = Tk()
     root23.geometry("750x680+1000+100")
     root23["bg"] = "darkslategray"
 
-    lblespe1 = Label(root23, text="ESPECIFICAÇÕES DO CARRO: FORD KA", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root23, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
-    lblespe3 = Label(root23, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
-    lblespe4 = Label(root23, text="CONSUMO CIDADE(KM/L): 9.3", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
-    lblespe5 = Label(root23, text="CONSUMO ESTRADA(KM/L): 12.2", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
-                                                                                                                 y=230)
-
+    lblespe1 = Label(root23, text="ESPECIFICAÇÕES DO CARRO: FORD KA", font=("arial", 16, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=100)
+    lblespe2 = Label(root23, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root23, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root23, text="CONSUMO CIDADE(KM/L): 9.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root23, text="CONSUMO ESTRADA(KM/L): 12.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100,
+                                                           y=230)
 
     root23.mainloop()
 
@@ -570,7 +1978,8 @@ def click_btnespecificacoesgol():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root22, text="CONSUMO CIDADE(KM/L): 8.8", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root22, text="CONSUMO ESTRADA(KM/L): 10.3", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root22, text="CONSUMO ESTRADA(KM/L): 10.3", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
@@ -590,11 +1999,13 @@ def click_btnespecificacoesfordkaH():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root21, text="CONSUMO CIDADE(KM/L): 9.2", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root21, text="CONSUMO ESTRADA(KM/L): 10.7", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root21, text="CONSUMO ESTRADA(KM/L): 10.7", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100,
                                        y=230)
 
     root21.mainloop()
+
 
 def click_btnespecificacoesmobi():
     root20 = Tk()
@@ -609,30 +2020,34 @@ def click_btnespecificacoesmobi():
                      fg="black").place(x=100, y=170)
     lblespe4 = Label(root20, text="CONSUMO CIDADE(KM/L): 9.2", font=("times new roman", 14, "bold"), bg="darkslategray",
                      fg="black").place(x=100, y=200)
-    lblespe5 = Label(root20, text="CONSUMO ESTRADA(KM/L): 10.2", font=("times new roman", 14, "bold"), bg="darkslategray",
+    lblespe5 = Label(root20, text="CONSUMO ESTRADA(KM/L): 10.2", font=("times new roman", 14, "bold"),
+                     bg="darkslategray",
                      fg="black").place(x=100, y=230)
 
     root20.mainloop()
 
 
 def click_btnespecificacoesUno():
-    root19= Tk()
+    root19 = Tk()
     root19.geometry("750x680+1000+100")
     root19["bg"] = "darkslategray"
 
-    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: FIAT NOVO UNO", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root19, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
-    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
-    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 9.1", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100, y=200)
-    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 10.6", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,
-                                                                                                                 y=230)
-
+    lblespe1 = Label(root19, text="ESPECIFICAÇÕES DO CARRO: FIAT NOVO UNO", font=("arial", 16, "bold"),
+                     bg="darkslategray", fg="black").place(x=100, y=100)
+    lblespe2 = Label(root19, text="MOTOR: 1.0", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=140)
+    lblespe3 = Label(root19, text="COMBUSTIVEL: ALCOOL", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=170)
+    lblespe4 = Label(root19, text="CONSUMO CIDADE(KM/L): 9.1", font=("times new roman", 14, "bold"), bg="darkslategray",
+                     fg="black").place(x=100, y=200)
+    lblespe5 = Label(root19, text="CONSUMO ESTRADA(KM/L): 10.6", font=("times new roman", 14, "bold"),
+                     bg="darkslategray", fg="black").place(x=100,
+                                                           y=230)
 
     root19.mainloop()
 
 
 def click_btnMOTO():
-
     root17 = Tk()
     root17.geometry("750x680+1000+100")
     root17["bg"] = "darkslategray"
@@ -640,37 +2055,41 @@ def click_btnMOTO():
     # ================== LABELS ========================
 
     lblbiz = Label(root17, text="HONDA BIZ 125CC: R$1,75(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=100)
+                   font=("arial", 10, "bold")).place(x=200, y=100)
     lblcg160 = Label(root17, text="HONDA CG 160CC: R$2,25(H)", bg="darkslategray", fg="black",
                      font=("arial", 10, "bold")).place(x=200, y=190)
     lblfazer250 = Label(root17, text="YAMAHA FAZER: R$2,75(H)", bg="darkslategray", fg="black",
-                     font=("arial", 10, "bold")).place(x=200, y=280)
+                        font=("arial", 10, "bold")).place(x=200, y=280)
     lbltomahawk = Label(root17, text="DODGE TOMAHAWK: R$50,75(H)", bg="darkslategray", fg="black",
                         font=("arial", 10, "bold")).place(x=200, y=370)
 
     # ================== BOTOES ========================
 
-    btnbiz = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                       fg="black").place(x=200, y=130)
-    btnESPECIFICACOESbiz = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoesbiz, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=160)
-    btnALUGUELcg160 = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btnbiz = Button(root17, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelbiz, font=("arial", 8, "bold"), width=17, bg="gray",
+                    fg="black").place(x=200, y=130)
+    btnESPECIFICACOESbiz = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoesbiz,
+                                  font=("arial", 8, "bold"), width=17, bg="gray",
+                                  fg="black").place(x=200, y=160)
+    btnALUGUELcg160 = Button(root17, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelcg160, font=("arial", 8, "bold"), width=17, bg="gray",
                              fg="black").place(x=200, y=220)
-    btnESPECIFICACOEScg160 = Button(root17, text="ESPECIFICAÇÕES",command=click_btnespecificacoescg, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnESPECIFICACOEScg160 = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoescg,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
                                     fg="black").place(x=200, y=250)
-    btnALUGUELfazer = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btnALUGUELfazer = Button(root17, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelfazer, font=("arial", 8, "bold"), width=17, bg="gray",
                              fg="black").place(x=200, y=310)
-    btnESPECIFICACOESfazer = Button(root17, text="ESPECIFICAÇÕES",command=click_btnespecificacoesfazer, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnESPECIFICACOESfazer = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoesfazer,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
                                     fg="black").place(x=200, y=340)
-    btnALUGUELalltomahawk = Button(root17, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                                fg="black").place(x=200, y=400)
-    btnESPECIFICACOEStomahawk = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoesdodge, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnALUGUELalltomahawk = Button(root17, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAlugueldodge, font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=400)
+    btnESPECIFICACOEStomahawk = Button(root17, text="ESPECIFICAÇÕES", command=click_btnespecificacoesdodge,
+                                       font=("arial", 8, "bold"), width=17, bg="gray",
                                        fg="black").place(x=200, y=430)
 
     root17.mainloop()
 
-def click_btnSUVGRANDE():
 
+def click_btnSUVGRANDE():
     root16 = Tk()
     root16.geometry("750x680+1000+100")
     root16["bg"] = "darkslategray"
@@ -678,26 +2097,27 @@ def click_btnSUVGRANDE():
     # ================== LABELS ========================
 
     lbljeep = Label(root16, text="JEEP COMPASS LONGITUDE: R$23,00(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=100)
+                    font=("arial", 10, "bold")).place(x=200, y=100)
     lbltrailblazer = Label(root16, text="CHEVROLET TRAILBLAZER: R$26,00(H)", bg="darkslategray", fg="black",
-                        font=("arial", 10, "bold")).place(x=200, y=190)
+                           font=("arial", 10, "bold")).place(x=200, y=190)
 
     # ================== BOTOES ========================
 
-    btnjeep = Button(root16, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                       fg="black").place(x=200, y=130)
-    btnESPECIFICACOESjeep = Button(root16, text="ESPECIFICAÇÕES", command=click_btnespecificacoeslongitude, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=160)
-    btnALUGUELtrailblazer= Button(root16, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                                fg="black").place(x=200, y=220)
-    btnESPECIFICACOEStrailblazer = Button(root16, text="ESPECIFICAÇÕES", command=click_btnespecificacoestrial, font=("arial", 8, "bold"), width=17, bg="gray",
-                                       fg="black").place(x=200, y=250)
+    btnjeep = Button(root16, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguellongitude, font=("arial", 8, "bold"), width=17, bg="gray",
+                     fg="black").place(x=200, y=130)
+    btnESPECIFICACOESjeep = Button(root16, text="ESPECIFICAÇÕES", command=click_btnespecificacoeslongitude,
+                                   font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=160)
+    btnALUGUELtrialblazer = Button(root16, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelblazer, font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=220)
+    btnESPECIFICACOEStrailblazer = Button(root16, text="ESPECIFICAÇÕES", command=click_btnespecificacoestrial,
+                                          font=("arial", 8, "bold"), width=17, bg="gray",
+                                          fg="black").place(x=200, y=250)
 
     root16.mainloop()
 
 
 def click_btnSUV():
-
     root15 = Tk()
     root15.geometry("750x680+1000+100")
     root15["bg"] = "darkslategray"
@@ -705,26 +2125,27 @@ def click_btnSUV():
     # ================== LABELS ========================
 
     lblduster = Label(root15, text="RENAULT DUSTER: R$10,00(H)", bg="darkslategray", fg="black",
-                   font=("arial", 10, "bold")).place(x=200, y=100)
+                      font=("arial", 10, "bold")).place(x=200, y=100)
     lblecosport = Label(root15, text="FORD ECOSPORT: R$10,30(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=190)
+                        font=("arial", 10, "bold")).place(x=200, y=190)
 
     # ================== BOTOES ========================
 
-    btnduster = Button(root15, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                    fg="black").place(x=200, y=130)
-    btnESPECIFICACOESduster = Button(root15, text="ESPECIFICAÇÕES", command=click_btnespecificacoesduster, font=("arial", 8, "bold"), width=17, bg="gray",
-                                  fg="black").place(x=200, y=160)
-    btnALUGUELecosport = Button(root15, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                              fg="black").place(x=200, y=220)
-    btnESPECIFICACOESecosport = Button(root15, text="ESPECIFICAÇÕES", command=click_btnespecificacoeseco, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=250)
+    btnduster = Button(root15, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelduster, font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOESduster = Button(root15, text="ESPECIFICAÇÕES", command=click_btnespecificacoesduster,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+    btnALUGUELecosport = Button(root15, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAlugueleco, font=("arial", 8, "bold"), width=17, bg="gray",
+                                fg="black").place(x=200, y=220)
+    btnESPECIFICACOESecosport = Button(root15, text="ESPECIFICAÇÕES", command=click_btnespecificacoeseco,
+                                       font=("arial", 8, "bold"), width=17, bg="gray",
+                                       fg="black").place(x=200, y=250)
 
     root15.mainloop()
 
 
 def click_btnPICKUPS():
-
     root14 = Tk()
     root14.geometry("750x680+1000+100")
     root14["bg"] = "darkslategray"
@@ -732,27 +2153,27 @@ def click_btnPICKUPS():
     # ================== LABELS ========================
 
     lblS10 = Label(root14, text="CHEVROLET GM S10: R$22,00(H)", bg="darkslategray", fg="black",
-                     font=("arial", 10, "bold")).place(x=200, y=100)
+                   font=("arial", 10, "bold")).place(x=200, y=100)
     lblranger = Label(root14, text="FORD RANGER: R$21,00(H)", bg="darkslategray", fg="black",
                       font=("arial", 10, "bold")).place(x=200, y=190)
 
     # ================== BOTOES ========================
 
-    btns10 = Button(root14, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                      fg="black").place(x=200, y=130)
-    btnESPECIFICACOESs10 = Button(root14, text="ESPECIFICAÇÕES", command=click_btnespecificacoess10, font=("arial", 8, "bold"), width=17, bg="gray",
-                                    fg="black").place(x=200, y=160)
-    btnALUGUELranger = Button(root14, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btns10 = Button(root14, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguels10, font=("arial", 8, "bold"), width=17, bg="gray",
+                    fg="black").place(x=200, y=130)
+    btnESPECIFICACOESs10 = Button(root14, text="ESPECIFICAÇÕES", command=click_btnespecificacoess10,
+                                  font=("arial", 8, "bold"), width=17, bg="gray",
+                                  fg="black").place(x=200, y=160)
+    btnALUGUELranger = Button(root14, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelranger, font=("arial", 8, "bold"), width=17, bg="gray",
                               fg="black").place(x=200, y=220)
-    btnESPECIFICACOESranger = Button(root14, text="ESPECIFICAÇÕES", command=click_btnespecificacoesranger, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnESPECIFICACOESranger = Button(root14, text="ESPECIFICAÇÕES", command=click_btnespecificacoesranger,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
                                      fg="black").place(x=200, y=250)
 
     root14.mainloop()
 
 
-
 def click_btnUTILITARIO():
-
     root13 = Tk()
     root13.geometry("750x680+1000+100")
     root13["bg"] = "darkslategray"
@@ -762,23 +2183,25 @@ def click_btnUTILITARIO():
     lbloroch = Label(root13, text="RENAULT OROCH: R$10,00(H)", bg="darkslategray", fg="black",
                      font=("arial", 10, "bold")).place(x=200, y=100)
     lblstrada = Label(root13, text="FIAT STRADA: R$9,70(H)", bg="darkslategray", fg="black",
-                    font=("arial", 10, "bold")).place(x=200, y=190)
+                      font=("arial", 10, "bold")).place(x=200, y=190)
 
     # ================== BOTOES ========================
 
-    btnoroch = Button(root13, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btnoroch = Button(root13, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAlugueloroch, font=("arial", 8, "bold"), width=17, bg="gray",
                       fg="black").place(x=200, y=130)
-    btnESPECIFICACOESoroch = Button(root13, text="ESPECIFICAÇÕES", command=click_btnespecificacoesoroch, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnESPECIFICACOESoroch = Button(root13, text="ESPECIFICAÇÕES", command=click_btnespecificacoesoroch,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
                                     fg="black").place(x=200, y=160)
-    btnALUGUELstrada = Button(root13, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                           fg="black").place(x=200, y=220)
-    btnESPECIFICACOESstrada = Button(root13, text="ESPECIFICAÇÕES", command=click_btnespecificacoesoroch, font=("arial", 8, "bold"), width=17, bg="gray",
-                                   fg="black").place(x=200, y=250)
+    btnALUGUELstrada = Button(root13, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelstrada, font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=220)
+    btnESPECIFICACOESstrada = Button(root13, text="ESPECIFICAÇÕES", command=click_btnespecificacoesoroch,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=250)
 
     root13.mainloop()
 
-def click_btnVANS():
 
+def click_btnVANS():
     root12 = Tk()
     root12.geometry("750x680+1000+100")
     root12["bg"] = "darkslategray"
@@ -786,26 +2209,27 @@ def click_btnVANS():
     # ================== LABELS ========================
 
     lbldoblo = Label(root12, text="FIAT DOPLO: R$12,30(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=100)
+                     font=("arial", 10, "bold")).place(x=200, y=100)
     lblspin = Label(root12, text="CHEVROLET SPIN: R$12,00(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=190)
+                    font=("arial", 10, "bold")).place(x=200, y=190)
 
     # ================== BOTOES ========================
 
-    btndoplo= Button(root12, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                       fg="black").place(x=200, y=130)
-    btnESPECIFICACOESdoplo = Button(root12, text="ESPECIFICAÇÕES", command=click_btnespecificacoesdoblo, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=160)
-    btnALUGUEspin = Button(root12, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                              fg="black").place(x=200, y=220)
-    btnESPECIFICACOESspin = Button(root12, text="ESPECIFICAÇÕES", command=click_btnespecificacoesspin, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=250)
+    btndoplo = Button(root12, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAlugueldoblo, font=("arial", 8, "bold"), width=17, bg="gray",
+                      fg="black").place(x=200, y=130)
+    btnESPECIFICACOESdoplo = Button(root12, text="ESPECIFICAÇÕES", command=click_btnespecificacoesdoblo,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=160)
+    btnALUGUEspin = Button(root12, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelspin, font=("arial", 8, "bold"), width=17, bg="gray",
+                           fg="black").place(x=200, y=220)
+    btnESPECIFICACOESspin = Button(root12, text="ESPECIFICAÇÕES", command=click_btnespecificacoesspin,
+                                   font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=250)
 
     root12.mainloop()
 
 
 def click_btnLUXO():
-
     root11 = Tk()
     root11.geometry("750x680+1000+100")
     root11["bg"] = "darkslategray"
@@ -815,24 +2239,25 @@ def click_btnLUXO():
     lbllancer = Label(root11, text="MITSUBISHI LANCER: R$15,60(H)", bg="darkslategray", fg="black",
                       font=("arial", 10, "bold")).place(x=200, y=100)
     lblsentra = Label(root11, text="NISSAN SENTRA: R$15,60(H)", bg="darkslategray", fg="black",
-                     font=("arial", 10, "bold")).place(x=200, y=190)
+                      font=("arial", 10, "bold")).place(x=200, y=190)
 
     # ================== BOTOES ========================
 
-    btnlancer = Button(root11, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btnlancer = Button(root11, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguellancer, font=("arial", 8, "bold"), width=17, bg="gray",
                        fg="black").place(x=200, y=130)
-    btnESPECIFICACOESlancer = Button(root11, text="ESPECIFICAÇÕES", command=click_btnespecificacoeslancer, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnESPECIFICACOESlancer = Button(root11, text="ESPECIFICAÇÕES", command=click_btnespecificacoeslancer,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
                                      fg="black").place(x=200, y=160)
-    btnALUGUELsentra = Button(root11, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                             fg="black").place(x=200, y=220)
-    btnESPECIFICACOESsentra = Button(root11, text="ESPECIFICAÇÕES", command=click_btnespecificacoessentra, font=("arial", 8, "bold"), width=17, bg="gray",
-                                    fg="black").place(x=200, y=250)
+    btnALUGUELsentra = Button(root11, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelsentra, font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=220)
+    btnESPECIFICACOESsentra = Button(root11, text="ESPECIFICAÇÕES", command=click_btnespecificacoessentra,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=250)
 
     root11.mainloop()
 
 
 def click_btnFULLSIZE():
-
     root10 = Tk()
     root10.geometry("750x680+1000+100")
     root10["bg"] = "darkslategray"
@@ -844,138 +2269,149 @@ def click_btnFULLSIZE():
     lbljetta = Label(root10, text="VOLKSWAGEN JETTA: R$11,00(H)", bg="darkslategray", fg="black",
                      font=("arial", 10, "bold")).place(x=200, y=190)
     lblcruze = Label(root10, text="CHEVROLET CRUZE: R$11,20(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=280)
+                     font=("arial", 10, "bold")).place(x=200, y=280)
     lblallspace = Label(root10, text="TIGUAN ALLSPACE: R$15,20(H)", bg="darkslategray", fg="black",
-                     font=("arial", 10, "bold")).place(x=200, y=370)
+                        font=("arial", 10, "bold")).place(x=200, y=370)
 
     # ================== BOTOES ========================
 
-    btncorola = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btncorola = Button(root10, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelcorola, font=("arial", 8, "bold"), width=17, bg="gray",
                        fg="black").place(x=200, y=130)
-    btnESPECIFICACOEScorola = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoescorolla, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnESPECIFICACOEScorola = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoescorolla,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
                                      fg="black").place(x=200, y=160)
-    btnALUGUELjetta = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btnALUGUELjetta = Button(root10, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAlugueljetta, font=("arial", 8, "bold"), width=17, bg="gray",
                              fg="black").place(x=200, y=220)
-    btnESPECIFICACOESjetta = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoesjetta, font=("arial", 8, "bold"), width=17, bg="gray",
+    btnESPECIFICACOESjetta = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoesjetta,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
                                     fg="black").place(x=200, y=250)
-    btnALUGUELcruze = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                              fg="black").place(x=200, y=310)
-    btnESPECIFICACOEScruze = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoescruze, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=340)
-    btnALUGUELallspace = Button(root10, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                             fg="black").place(x=200, y=400)
-    btnESPECIFICACOESallspace = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoesallspace, font=("arial", 8, "bold"), width=17, bg="gray",
-                                    fg="black").place(x=200, y=430)
+    btnALUGUELcruze = Button(root10, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelcruze, font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=310)
+    btnESPECIFICACOEScruze = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoescruze,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=340)
+    btnALUGUELallspace = Button(root10, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelallspace, font=("arial", 8, "bold"), width=17, bg="gray",
+                                fg="black").place(x=200, y=400)
+    btnESPECIFICACOESallspace = Button(root10, text="ESPECIFICAÇÕES", command=click_btnespecificacoesallspace,
+                                       font=("arial", 8, "bold"), width=17, bg="gray",
+                                       fg="black").place(x=200, y=430)
 
     root10.mainloop()
 
 
 def click_btnMEDIO():
-
-    root9=Tk()
+    root9 = Tk()
     root9.geometry("750x680+1000+100")
     root9["bg"] = "darkslategray"
 
     # ================== LABELS ========================
 
     lblsandero = Label(root9, text="RENAULT SANDERO: R$6,00(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=100)
+                       font=("arial", 10, "bold")).place(x=200, y=100)
 
     # ================== BOTOES ========================
 
-    btnsandero = Button(root9, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                       fg="black").place(x=200, y=130)
-    btnESPECIFICACOESsandero = Button(root9, text="ESPECIFICAÇÕES", command=click_btnespecificacoessandeiro, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=160)
+    btnsandero = Button(root9, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelsandero, font=("arial", 8, "bold"), width=17, bg="gray",
+                        fg="black").place(x=200, y=130)
+    btnESPECIFICACOESsandero = Button(root9, text="ESPECIFICAÇÕES", command=click_btnespecificacoessandeiro,
+                                      font=("arial", 8, "bold"), width=17, bg="gray",
+                                      fg="black").place(x=200, y=160)
 
     root9.mainloop()
 
 
 def click_btnINTERMEDIARIOS():
-
-    root8=Tk()
+    root8 = Tk()
     root8.geometry("750x680+1000+100")
     root8["bg"] = "darkslategray"
 
     # ================== LABELS ========================
 
     lblprisma = Label(root8, text="Chevrolet Prisma: R$7,00(H)", bg="darkslategray", fg="black",
-                   font=("arial", 10, "bold")).place(x=200, y=100)
+                      font=("arial", 10, "bold")).place(x=200, y=100)
     lblhb20S = Label(root8, text="HYUNDAI HB 20S: R$7,00(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=190)
+                     font=("arial", 10, "bold")).place(x=200, y=190)
     lblvoyage = Label(root8, text="VOLKSWAGEN VOYAGE: R$7,20(H)", bg="darkslategray", fg="black",
-                         font=("arial", 10, "bold")).place(x=200, y=280)
+                      font=("arial", 10, "bold")).place(x=200, y=280)
     lblversa = Label(root8, text="NISSAN VERSA: R$7,30(H)", bg="darkslategray", fg="black",
-                       font=("arial", 10, "bold")).place(x=200, y=370)
+                     font=("arial", 10, "bold")).place(x=200, y=370)
     lblfocus = Label(root8, text="FORD FOCUS: R$7,80(H)", bg="darkslategray", fg="black",
                      font=("arial", 10, "bold")).place(x=200, y=460)
 
     # ================== BOTOES ========================
 
-    btnprisma = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                    fg="black").place(x=200, y=130)
-    btnESPECIFICACOESprisma = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesprisma, font=("arial", 8, "bold"), width=17, bg="gray",
-                                  fg="black").place(x=200, y=160)
-    btnALUGUELhb20S = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                              fg="black").place(x=200, y=220)
-    btnESPECIFICACOEShb20S = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoeshb20s, font=("arial", 8, "bold"), width=17, bg="gray",
-                                     fg="black").place(x=200, y=250)
-    btnALUGUELvoyage = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                                 fg="black").place(x=200, y=310)
-    btnESPECIFICACOESvoyage = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesvoyage, font=("arial", 8, "bold"), width=17, bg="gray",
-                                        fg="black").place(x=200, y=340)
-    btnALUGUELversa = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                               fg="black").place(x=200, y=400)
-    btnESPECIFICACOESversa = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesversa, font=("arial", 8, "bold"), width=17, bg="gray",
-                                      fg="black").place(x=200, y=430)
-    btnfocus = Button(root8, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                    fg="black").place(x=200, y=490)
-    btnESPECIFICACOESfocus = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesfocus, font=("arial", 8, "bold"), width=17, bg="gray",
-                                      fg="black").place(x=200, y=520)
+    btnprisma = Button(root8, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelprisma, font=("arial", 8, "bold"), width=17, bg="gray",
+                       fg="black").place(x=200, y=130)
+    btnESPECIFICACOESprisma = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesprisma,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=160)
+    btnALUGUELhb20S = Button(root8, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelhb20s, font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=220)
+    btnESPECIFICACOEShb20S = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoeshb20s,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=250)
+    btnALUGUELvoyage = Button(root8, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelvoyage, font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=310)
+    btnESPECIFICACOESvoyage = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesvoyage,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=340)
+    btnALUGUELversa = Button(root8, text="COMEÇAR O ALUGUEL",command=click_btnComeçarAluguelversa, font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=400)
+    btnESPECIFICACOESversa = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesversa,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=430)
+    btnfocus = Button(root8, text="COMEÇAR O ALUGUEL",command=click_btnComeçarAluguelfocus, font=("arial", 8, "bold"), width=17, bg="gray",
+                      fg="black").place(x=200, y=490)
+    btnESPECIFICACOESfocus = Button(root8, text="ESPECIFICAÇÕES", command=click_btnespecificacoesfocus,
+                                    font=("arial", 8, "bold"), width=17, bg="gray",
+                                    fg="black").place(x=200, y=520)
 
     root8.mainloop()
 
-def click_btnCOMPACTOS():
 
-    root7=Tk()
+def click_btnCOMPACTOS():
+    root7 = Tk()
     root7.geometry("750x680+1000+100")
     root7["bg"] = "darkslategray"
 
     # ================== LABELS ========================
 
     lblgol = Label(root7, text="Wolkswagen Gol: R$6,00(H)", bg="darkslategray", fg="black",
-                     font=("arial", 10, "bold")).place(x=200, y=100)
+                   font=("arial", 10, "bold")).place(x=200, y=100)
     lblfordka = Label(root7, text="FORD KA: R$6,00(H)", bg="darkslategray", fg="black",
-                            font=("arial", 10, "bold")).place(x=200, y=190)
+                      font=("arial", 10, "bold")).place(x=200, y=190)
     lblchevrolet = Label(root7, text="CHEVROLET ONIX: R$6,20(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=280)
+                         font=("arial", 10, "bold")).place(x=200, y=280)
     lblHYUNDAI = Label(root7, text="HYUNDAI HB20: R$6,50(H)", bg="darkslategray", fg="black",
-                      font=("arial", 10, "bold")).place(x=200, y=370)
+                       font=("arial", 10, "bold")).place(x=200, y=370)
 
     # ================== BOTÕES ========================
 
-    btngol = Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                            fg="black").place(x=200, y=130)
-    btnESPECIFICACOESgol = Button(root7, text="ESPECIFICAÇÕES",command=click_btnespecificacoesgol, font=("arial", 8, "bold"), width=17, bg="gray",
-                                   fg="black").place(x=200, y=160)
-    btnALUGUELfordka= Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                            fg="black").place(x=200, y=220)
-    btnESPECIFICACOESfordka = Button(root7, text="ESPECIFICAÇÕES",command=click_btnespecificacoesfordka, font=("arial", 8, "bold"), width=17, bg="gray",
-                                   fg="black").place(x=200, y=250)
-    btnALUGUELchevrolet = Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                              fg="black").place(x=200, y=310)
-    btnESPECIFICACOESchevrolet = Button(root7, text="ESPECIFICAÇÕES", command=click_btnespecificacoesonix, font=("arial", 8, "bold"), width=17, bg="gray",
-                                   fg="black").place(x=200, y=340)
-    btnALUGUELhyundai = Button(root7, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                              fg="black").place(x=200, y=400)
-    btnESPECIFICACOEShyundai = Button(root7, text="ESPECIFICAÇÕES", command=especificacoeshb20, font=("arial", 8, "bold"), width=17, bg="gray",
-                                   fg="black").place(x=200, y=430)
+    btngol = Button(root7, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelgol, font=("arial", 8, "bold"), width=17, bg="gray",
+                    fg="black").place(x=200, y=130)
+    btnESPECIFICACOESgol = Button(root7, text="ESPECIFICAÇÕES", command=click_btnespecificacoesgol,
+                                  font=("arial", 8, "bold"), width=17, bg="gray",
+                                  fg="black").place(x=200, y=160)
+    btnALUGUELfordka = Button(root7, text="COMEÇAR O ALUGUEL",command=click_btnComeçarAluguelka, font=("arial", 8, "bold"), width=17, bg="gray",
+                              fg="black").place(x=200, y=220)
+    btnESPECIFICACOESfordka = Button(root7, text="ESPECIFICAÇÕES", command=click_btnespecificacoesfordka,
+                                     font=("arial", 8, "bold"), width=17, bg="gray",
+                                     fg="black").place(x=200, y=250)
+    btnALUGUELchevrolet = Button(root7, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelonix, font=("arial", 8, "bold"), width=17, bg="gray",
+                                 fg="black").place(x=200, y=310)
+    btnESPECIFICACOESchevrolet = Button(root7, text="ESPECIFICAÇÕES", command=click_btnespecificacoesonix,
+                                        font=("arial", 8, "bold"), width=17, bg="gray",
+                                        fg="black").place(x=200, y=340)
+    btnALUGUELhyundai = Button(root7, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelhb20, font=("arial", 8, "bold"), width=17, bg="gray",
+                               fg="black").place(x=200, y=400)
+    btnESPECIFICACOEShyundai = Button(root7, text="ESPECIFICAÇÕES", command=especificacoeshb20,
+                                      font=("arial", 8, "bold"), width=17, bg="gray",
+                                      fg="black").place(x=200, y=430)
 
     root7.mainloop()
 
 
 def click_btnECONOMICOAR():
-
     root6 = Tk()
     root6.geometry("750x680+1000+100")
     root6["bg"] = "darkslategray"
@@ -983,93 +2419,103 @@ def click_btnECONOMICOAR():
     # ================== LABELS ========================
 
     lblfordk = Label(root6, text="FORD KA HATCH : R$5,40(H)", bg="darkslategray", fg="black",
-                       font=("arial", 10, "bold")).place(x=200, y=100)
+                     font=("arial", 10, "bold")).place(x=200, y=100)
     lblfiatmobilike = Label(root6, text="FIAT MOBI LIKE: R$5,20(H)", bg="darkslategray", fg="black",
-                        font=("arial", 10, "bold")).place(x=200, y=220)
+                            font=("arial", 10, "bold")).place(x=200, y=220)
 
     # ================== BOTÕES ========================
 
-    btnALUGUELfordk = Button(root6, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
-                            fg="black").place(x=200, y=130)
-    btnESPECIFICACOESfordk = Button(root6, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), width=17, command=click_btnespecificacoesfordkaH, bg="gray",
-                                   fg="black").place(x=200, y=160)
-    btnALUGUELlike = Button(root6, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btnALUGUELfordk = Button(root6, text="COMEÇAR O ALUGUEL",command=click_btnComeçarAluguelhatch, font=("arial", 8, "bold"), width=17, bg="gray",
+                             fg="black").place(x=200, y=130)
+    btnESPECIFICACOESfordk = Button(root6, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), width=17,
+                                    command=click_btnespecificacoesfordkaH, bg="gray",
+                                    fg="black").place(x=200, y=160)
+    btnALUGUELlike = Button(root6, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguellike, font=("arial", 8, "bold"), width=17, bg="gray",
                             fg="black").place(x=200, y=250)
-    btnESPECIFICACOESlike = Button(root6, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), command=click_btnespecificacoesmobi, width=17, bg="gray",
+    btnESPECIFICACOESlike = Button(root6, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"),
+                                   command=click_btnespecificacoesmobi, width=17, bg="gray",
                                    fg="black").place(x=200, y=280)
 
     root6.mainloop()
 
-def click_btnECONOMICO():
 
+def click_btnECONOMICO():
     root5 = Tk()
     root5.geometry("750x680+1000+100")
     root5["bg"] = "darkslategray"
 
-    #================== LABELS ========================
+    # ================== LABELS ========================
 
     lblfiatuno = Label(root5, text="FIAT UNO NOVO: R$4,40(H)", bg="darkslategray", fg="black",
                        font=("arial", 10, "bold")).place(x=200, y=100)
     lblfiatmobi = Label(root5, text="FIAT MOBI: R$4,20(H)", bg="darkslategray", fg="black",
-                       font=("arial", 10, "bold")).place(x=200, y=220)
+                        font=("arial", 10, "bold")).place(x=200, y=220)
 
+    # ================== BOTÕES ========================
 
-
-    #================== BOTÕES ========================
-
-    btnALUGUELfiat = Button(root5, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguel, font=("arial", 8, "bold"), width=17, bg="gray",
-                        fg="black").place(x=200, y=130)
-    btnESPECIFICACOESfiat = Button(root5, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), width=17, command=click_btnespecificacoesUno, bg="gray",
-                        fg="black").place(x=200, y=160)
-    btnALUGUELmobi = Button(root5, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, command=click_btnespecificacoesmobi, bg="gray",
-                        fg="black").place(x=200, y=250)
-    btnESPECIFICACOESmobi = Button(root5, text="ESPECIFICAÇÕES", command=click_btnespecificacoesmobi, font=("arial", 8, "bold"), width=17, bg="gray",
-                        fg="black").place(x=200, y=280)
+    btnALUGUELuno = Button(root5, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguelUno, font=("arial", 8, "bold"),
+                            width=17, bg="gray",
+                            fg="black").place(x=200, y=130)
+    btnESPECIFICACOESuno = Button(root5, text="ESPECIFICAÇÕES", command=click_btnespecificacoesUno ,font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=160)
+    btnALUGUELmobi = Button(root5, text="COMEÇAR O ALUGUEL",command=click_btnComeçarAluguelmobi,font=("arial", 8, "bold"), width=17, bg="gray",
+                            fg="black").place(x=200, y=250)
+    btnESPECIFICACOESmobi = Button(root5, text="ESPECIFICAÇÕES", command=click_btnespecificacoesmobi,
+                                   font=("arial", 8, "bold"), width=17, bg="gray",
+                                   fg="black").place(x=200, y=280)
 
     root5.mainloop()
 
 
-
-
-
 def click_btnCARRO():
-
     global root4
-    root4= Tk()
+    root4 = Tk()
     root4.geometry("750x680+1000+100")
     root4["bg"] = "darkslategray"
 
-    #===================== LABELS ===============================
+    # ===================== LABELS ===============================
 
-    lblCATEGORIAS = Label(root4, text="CATEGORIAS", font=("arial", 20, "bold"), bg="darkslategray", fg="black").place(x=295, y=100)
+    lblCATEGORIAS = Label(root4, text="CATEGORIAS", font=("arial", 20, "bold"), bg="darkslategray", fg="black").place(
+        x=295, y=100)
 
-    #===================== BOTÕES ===============================
+    # ===================== BOTÕES ===============================
 
-    btnECONOMICO= Button(root4, text="ECONÔMICO SEM AR", bg="gray", fg="white", font=("arial", 13, "bold"), command=click_btnECONOMICO, width=30).place(
-        x=230,y=170)
-    btnECONOMICOAR = Button(root4, text="ECONÔMICO COM AR", bg="gray", fg="white", font=("arial", 13, "bold"), command=click_btnECONOMICOAR, width=30).place(
+    btnECONOMICO = Button(root4, text="ECONÔMICO SEM AR", bg="gray", fg="white", font=("arial", 13, "bold"),
+                          command=click_btnECONOMICO, width=30).place(
+        x=230, y=170)
+    btnECONOMICOAR = Button(root4, text="ECONÔMICO COM AR", bg="gray", fg="white", font=("arial", 13, "bold"),
+                            command=click_btnECONOMICOAR, width=30).place(
         x=230, y=210)
-    btNCOMPACTOS= Button(root4, text="COMPACTOS", bg="gray", fg="white", font=("arial", 13, "bold"), command=click_btnCOMPACTOS, width=30).place(
+    btNCOMPACTOS = Button(root4, text="COMPACTOS", bg="gray", fg="white", font=("arial", 13, "bold"),
+                          command=click_btnCOMPACTOS, width=30).place(
         x=230, y=250)
-    btnINTERMEDIARIOS = Button(root4, text="INTERMEDIARIOS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnINTERMEDIARIOS).place(
+    btnINTERMEDIARIOS = Button(root4, text="INTERMEDIARIOS", bg="gray", fg="white", font=("arial", 13, "bold"),
+                               width=30, command=click_btnINTERMEDIARIOS).place(
         x=230, y=290)
-    btnMEDIO = Button(root4, text="MEDIO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnMEDIO).place(
+    btnMEDIO = Button(root4, text="MEDIO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                      command=click_btnMEDIO).place(
         x=230, y=330)
-    btnFULLSIZE = Button(root4, text="FULLSIZE", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnFULLSIZE).place(
+    btnFULLSIZE = Button(root4, text="FULLSIZE", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                         command=click_btnFULLSIZE).place(
         x=230, y=370)
-    btnLUXO = Button(root4, text="LUXO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnLUXO).place(
+    btnLUXO = Button(root4, text="LUXO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                     command=click_btnLUXO).place(
         x=230, y=410)
-    btnVANS = Button(root4, text="VANS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnVANS).place(
+    btnVANS = Button(root4, text="VANS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                     command=click_btnVANS).place(
         x=230, y=450)
-    btnUTILITARIO = Button(root4, text="UTILITARIO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnUTILITARIO).place(
+    btnUTILITARIO = Button(root4, text="UTILITARIO", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                           command=click_btnUTILITARIO).place(
         x=230, y=490)
-    btnPICKUPS = Button(root4, text="PICK UPS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnPICKUPS).place(
+    btnPICKUPS = Button(root4, text="PICK UPS", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                        command=click_btnPICKUPS).place(
         x=230, y=530)
-    btnSUV = Button(root4, text="SUV", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnSUV).place(
+    btnSUV = Button(root4, text="SUV", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                    command=click_btnSUV).place(
         x=230, y=570)
-    btnSUVGRANDE = Button(root4, text="SUV GRANDE", bg="gray", fg="white", font=("arial", 13, "bold"), width=30, command=click_btnSUVGRANDE).place(
+    btnSUVGRANDE = Button(root4, text="SUV GRANDE", bg="gray", fg="white", font=("arial", 13, "bold"), width=30,
+                          command=click_btnSUVGRANDE).place(
         x=230, y=610)
-
 
 
 def click_btnCONTINUAR():
@@ -1079,156 +2525,75 @@ def click_btnCONTINUAR():
     root3.geometry("750x620+1000+100")
     root3["bg"] = "darkslategray"
 
-    lbl1 = Label(root3, text="ESCOLHA O TIPO DE VEICULO:" , font=("arial", 16, "bold"), fg="black", bg="darkslategray").place(x=214, y=140)
-    btnCarro = Button(root3, text="CARRO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white", command=click_btnCARRO).place(x=270, y=240)
-    btnMoto = Button(root3, text="MOTO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white", command=click_btnMOTO).place(x=270, y=290)
+    lbl1 = Label(root3, text="ESCOLHA O TIPO DE VEICULO:", font=("arial", 16, "bold"), fg="black",
+                 bg="darkslategray").place(x=214, y=140)
+    btnCarro = Button(root3, text="CARRO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white",
+                      command=click_btnCARRO).place(x=270, y=240)
+    btnMoto = Button(root3, text="MOTO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white",
+                     command=click_btnMOTO).place(x=270, y=290)
 
     root3.mainloop()
 
 
-
-def click_btnCADLOG():
-
-    root2.destroy()
-    root = Tk()
-    root.title("Tela de Login")
-    root.geometry("750x620+1000+100")
-    root["bg"] = "darkslategray"
-    # ================= VARIAVEIS ENTRYS ==================================
-
-    varcpf = StringVar()
-    varsenha = StringVar()
-
-    # ================== LABELS ====================================
-
-    lbl_login = Label(root, text="FAÇA SEU LOGIN", font=("arial", 18, "bold"), bg="darkslategray", fg="black").place(
-        x=262, y=200)
-    lblcpf = Label(root, text="CPF:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230,
-                                                                                                                 y=280)
-    lblsenha = Label(root, text="SENHA:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(
-        x=230, y=330)
-
-    # ======================== ENTRYS ==============================
-    cpf_LOGIN = Entry(root, textvariable=varcpf, font=("times new roman", 13, "bold"), width=30, fg="black").place(
-        x=230, y=300)
-    senha_LOGIN = Entry(root, textvariable=varsenha, font=("times new roman", 13, "bold"), width=30, fg="black").place(
-        x=230, y=350)
-
-    # ======================= BOTÕES ===============================
-    btn_entrar = Button(root, text="ENTRAR", bg="gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnCONTINUAR).place(x=320,y=400)
-
-    root.mainloop()
-
-
-def click_btnLOGIN():
-
-    global root
-    janela.destroy()
-    root = Tk()
-    root.title("Tela de Login")
-    root.geometry("750x620+1000+100")
-    root["bg"] = "darkslategray"
-    # ================= VARIAVEIS ENTRYS ==================================
-
-    varcpf = StringVar()
-    varsenha = StringVar()
-
-    #================== LABELS ====================================
-
-    lbl_login = Label(root, text="FAÇA SEU LOGIN", font=("arial", 18, "bold"), bg="darkslategray", fg= "black").place(x=262, y=200)
-    lblcpf = Label(root, text="CPF:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230, y=280)
-    lblsenha = Label(root, text="SENHA:", font=("times new roman", 9, "bold"), bg="darkslategray", fg="black").place(x=230, y=330)
-
-    #======================== ENTRYS ==============================
-    cpf_LOGIN = Entry(root, textvariable=varcpf, font=("times new roman", 13, "bold"), width=30, fg="black").place(x=230, y=300)
-    senha_LOGIN = Entry(root, textvariable=varsenha, font=("times new roman", 13, "bold"), width=30, fg="black").place(x=230, y=350)
-
-    #======================= BOTÕES ===============================
-    btn_entrar = Button(root, text="ENTRAR", bg= "gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnCONTINUAR).place(x=320,y=400)
-
-    root.mainloop()
-
-def click_btnCADASTRO():
-
-    global root2
-    janela.destroy()
-    root2 = Tk()
-    root2.title("CADASTRE-SE")
-    root2.geometry("750x620+1000+100")
-    root2["bg"] = "darkslategray"
-    #===================== LABELS =========================
-
-    lblCADASTRO = Label(root2, text="CADASTRO", font=("arial", 20, "bold"), bg="darkslategray", fg= "black").place(x=288, y=180)
-    lblNOME = Label(root2, text="Adicione seu nome:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=260)
-    lblCPF = Label(root2, text="Adicione seu CPF:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=310)
-    lblSENHA = Label(root2, text="Adicione sua senha:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=360)
-    lblSENHA2 = Label(root2, text="Confirme sua senha:", font=("times new roman", 9, "bold"), bg="darkslategray").place(x=230, y=410)
-
-    #===================== ENTRYS =========================
-
-    txtNOME = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=280)
-    txtCPF = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=330)
-    txtSENHA = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=380)
-    txtSENHA2 = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=430)
-
-
-    root2.mainloop()
-
-global lista
-global a
-global b
-lista=[0.0,0.0]
-
 def horainicio():
     import datetime
     date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
-    lista[0]= time.time()
-    print("ok")
-    print(lista)
+    lista[0] = time.time()
 
 
 def horafinal():
     import datetime
     date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
-    lista[1]= time.time()
-    print("ok2")
-    print(lista)
-
+    lista[1] = time.time()
 
 
 def diferencahora():
+    global dif
     s = lista[0]
     t = lista[1]
-    print(s)
-    print(t)
-    dif = t - s 
-    print(dif)
-    lblx = Label(root18, text="icaroécorno", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=340)
-    
+    dif = (t - s)/3600
+    lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+    lblx.place(x=100, y=340)
+    lblx["text"] = dif
 
-def click_btnComeçarAluguel():
 
+def click_btnComeçarAluguelUno():
     global root18
     root18 = Tk()
     root18.geometry("750x680+1000+100")
     root18["bg"] = "darkslategray"
-    
 
-    #======================= LABELS =========================
+    def diferencahora():
+        global dif
+        s = lista[0]
+        t = lista[1]
+        dif = (((t - s) / 3600)*4.4)
+        lblx = Label(root18, text="", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lblx.place(x=285, y=360)
+        lblx["text"] = dif
+        lbly = Label(root18, text="Valor a ser pago: R$", bg="darkslategray", fg="black", font=("times new roman", 15, "bold"))
+        lbly.place(x=100, y=360)
 
-    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
-    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=200)
-    lbl2 = Label(root18, text="Valor Total:",  bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=300)
 
-    #======================= BOTOES =========================
+    # ======================= LABELS =========================
 
-    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command= horainicio).place(x=100, y=150)
-    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=horafinal).place(x=100, y=250)
-    btnValor= Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"), command=diferencahora).place(x=100, y=630)
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray",
+                 fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:", bg="darkslategray", fg="black",
+                 font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    # ======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"),
+                          command=horafinal).place(x=100, y=250)
+    btnValor = Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"),
+                      command=diferencahora).place(x=100, y=630)
 
     # ===================== ENTRYS ==========================
-
-
 
     root18.mainloop()
 
@@ -1237,7 +2602,7 @@ global janela
 global nome
 janela = Tk()
 cont = 0
-#LxA+(distancia da janela ate a lateral esquerda)+(distancia da janela ate o topo)
+# LxA+(distancia da janela ate a lateral esquerda)+(distancia da janela ate o topo)
 janela.geometry("750x620+1000+100")
 
 janela.title("Tela Inicial")
@@ -1249,20 +2614,20 @@ time1 = StringVar()
 date1.set(time.strftime("%d/%m/%Y"))
 time1.set(time.strftime("%H:%M"))
 
-
-#============= LABELS ===========================
+# ============= LABELS ===========================
 
 lbltime = Label(janela, textvariable=time1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
 lbltime.place(x=671, y=574)
 lbldate = Label(janela, textvariable=date1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
 lbldate.place(x=645, y=595)
-lbl0 = Label(janela, text="BEM VINDO, ESTAMOS PRONTOS PARA INICAR O ALUGUEL DO SEU CARRO!", font=("times new roman", 13, "bold"), bg="darkslategray", fg="black")
+lbl0 = Label(janela, text="BEM VINDO, ESTAMOS PRONTOS PARA INICAR O ALUGUEL DO SEU CARRO!",
+             font=("times new roman", 13, "bold"), bg="darkslategray", fg="black")
 lbl0.place(x=80, y=100)
 
-#============= BOTÕES ===========================
+# ============= BOTÕES ===========================
 
-btnCONTINUAR = Button(janela, text="INICIAR", font=("arial", 16, "bold"), command=click_btnCONTINUAR, fg="white", width=20, bg="gray")
+btnCONTINUAR = Button(janela, text="INICIAR", font=("arial", 16, "bold"), command=click_btnCONTINUAR, fg="white",
+                      width=20, bg="gray")
 btnCONTINUAR.place(x=245, y=450)
-
 
 janela.mainloop()
