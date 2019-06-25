@@ -1,0 +1,27 @@
+from datetime import datetime
+import time
+lista=[1.0,2.0]
+
+def horainicio(lista):
+    import datetime
+    date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
+    lista[0]=date
+
+
+
+
+
+def horafinal(lista):
+    import datetime
+    date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
+    lista[1]=date
+    return date
+a=lista[0]
+b=lista[1]
+
+def diferencahora(a,b ):
+    s = float(a)
+    t = float(b)
+    f = '%Y/%m/%d %H:%M:%S'
+    dif = (t - s)
+    return dif/3600
