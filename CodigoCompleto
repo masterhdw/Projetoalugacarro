@@ -1,7 +1,9 @@
-from tkinter import*
 import time
-
 from tkinter import *
+
+
+
+
 
 def click_btnespecificacoesdodge():
     root19= Tk()
@@ -1034,7 +1036,6 @@ def click_btnECONOMICO():
 def click_btnCARRO():
 
     global root4
-    root3.destroy()
     root4= Tk()
     root4.geometry("750x680+1000+100")
     root4["bg"] = "darkslategray"
@@ -1072,13 +1073,14 @@ def click_btnCARRO():
 
 
 
-def click_btnENTRAR():
+def click_btnCONTINUAR():
     global root3
+    janela.destroy()
     root3 = Tk()
     root3.geometry("750x620+1000+100")
     root3["bg"] = "darkslategray"
 
-    lbl1 = Label(root3, text="ESCOLHA O TIPO DE VEICULO QUE VOCÊ DESEJA:", font=("arial", 16, "bold"), fg="black", bg="darkslategray").place(x=130, y=140)
+    lbl1 = Label(root3, text="ESCOLHA O TIPO DE VEICULO:" , font=("arial", 16, "bold"), fg="black", bg="darkslategray").place(x=214, y=140)
     btnCarro = Button(root3, text="CARRO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white", command=click_btnCARRO).place(x=270, y=240)
     btnMoto = Button(root3, text="MOTO", font=("arial", 16, "bold"), width=16, bg="gray", fg="white", command=click_btnMOTO).place(x=270, y=290)
 
@@ -1114,7 +1116,7 @@ def click_btnCADLOG():
         x=230, y=350)
 
     # ======================= BOTÕES ===============================
-    btn_entrar = Button(root, text="ENTRAR", bg="gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnENTRAR).place(x=320,y=400)
+    btn_entrar = Button(root, text="ENTRAR", bg="gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnCONTINUAR).place(x=320,y=400)
 
     root.mainloop()
 
@@ -1143,7 +1145,7 @@ def click_btnLOGIN():
     senha_LOGIN = Entry(root, textvariable=varsenha, font=("times new roman", 13, "bold"), width=30, fg="black").place(x=230, y=350)
 
     #======================= BOTÕES ===============================
-    btn_entrar = Button(root, text="ENTRAR", bg= "gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnENTRAR).place(x=320,y=400)
+    btn_entrar = Button(root, text="ENTRAR", bg= "gray", font=("arial", 12, "bold"), width=8, fg="white", command=click_btnCONTINUAR).place(x=320,y=400)
 
     root.mainloop()
 
@@ -1170,19 +1172,12 @@ def click_btnCADASTRO():
     txtSENHA = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=380)
     txtSENHA2 = Entry(root2, font=("times new roman", 13, "bold"), width=30).place(x=230, y=430)
 
-    def click_btnCADASTRAR(senha1, senha2):
-        if senha1 != senha2:
-            Label(root2, text="AS SENHAS INFORMADAS NÃO SÃO COMPATÍVEIS", font=("times new roman", 18, "bold")).place(x=300, y=50)
-
-    #====================  BOTÕES =========================
-
-    btnCADASTRAR = Button(root2, text="CADASTRAR", bg="gray", font=("arial", 12, "bold"), width=15, command=click_btnCADASTRAR(txtSENHA, txtSENHA2), fg="white").place(x=288, y=490)
-    btnCADASTRARLOG = Button(root2, text="LOGIN", bg="gray", font=("arial", 12, "bold"), width=15, command=click_btnCADLOG, fg="white").place(x=288, y=530)
 
     root2.mainloop()
 
 
 global janela
+global nome
 janela = Tk()
 cont = 0
 #LxA+(distancia da janela ate a lateral esquerda)+(distancia da janela ate o topo)
@@ -1196,25 +1191,21 @@ time1 = StringVar()
 
 date1.set(time.strftime("%d/%m/%Y"))
 time1.set(time.strftime("%H:%M"))
-#========== FOTOS ===============================
 
-fotoInicial = PhotoImage(file="fiatUnoNovo.png")
 
 #============= LABELS ===========================
-
-lb1image0 = Label(janela, image=fotoInicial)
 
 lbltime = Label(janela, textvariable=time1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
 lbltime.place(x=671, y=574)
 lbldate = Label(janela, textvariable=date1, font=("arial", 14, "bold"), fg="black", bg="darkslategray")
 lbldate.place(x=645, y=595)
+lbl0 = Label(janela, text="BEM VINDO, ESTAMOS PRONTOS PARA INICAR O ALUGUEL DO SEU CARRO!", font=("times new roman", 13, "bold"), bg="darkslategray", fg="black")
+lbl0.place(x=80, y=100)
 
 #============= BOTÕES ===========================
 
-btnLOGIN = Button(janela, text="LOGIN", font=("arial", 16, "bold"), fg="white", width=20, command=click_btnLOGIN, bg="gray")
-btnLOGIN.place(x=250, y=400)
-btnCADASTRO = Button(janela, text="CADASTRAR-SE", font=("arial", 16, "bold"), fg="white", width=20, command=click_btnCADASTRO, bg="gray")
-btnCADASTRO.place(x=250, y=450)
+btnCONTINUAR = Button(janela, text="INICIAR", font=("arial", 16, "bold"), command=click_btnCONTINUAR, fg="white", width=20, bg="gray")
+btnCONTINUAR.place(x=245, y=450)
 
 
 janela.mainloop()
