@@ -1,7 +1,6 @@
 import time
 from tkinter import *
-
-
+from datetime import datetime
 
 
 
@@ -11,7 +10,7 @@ def click_btnespecificacoesdodge():
     root19["bg"] = "darkslategray"
 
     lblespe1 = Label(root19, text="ESPECIFICAÇÕES DA MOTO: DODGE TOMAHAWK", font=("arial", 16, "bold"), bg="darkslategray", fg="black").place(x=100,y=100)
-    lblespe2 = Label(root19, text="MOTOR: 506cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
+    lblespe2 = Label(root19, text="MOTOR: 8275cc", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=140)
     lblespe3 = Label(root19, text="COMBUSTIVEL: GASOLINA", font=("times new roman", 14, "bold"), bg="darkslategray", fg="black").place(x=100,y=170)
 
 
@@ -1018,7 +1017,7 @@ def click_btnECONOMICO():
 
     #================== BOTÕES ========================
 
-    btnALUGUELfiat = Button(root5, text="COMEÇAR O ALUGUEL", font=("arial", 8, "bold"), width=17, bg="gray",
+    btnALUGUELfiat = Button(root5, text="COMEÇAR O ALUGUEL", command=click_btnComeçarAluguel, font=("arial", 8, "bold"), width=17, bg="gray",
                         fg="black").place(x=200, y=130)
     btnESPECIFICACOESfiat = Button(root5, text="ESPECIFICAÇÕES", font=("arial", 8, "bold"), width=17, command=click_btnespecificacoesUno, bg="gray",
                         fg="black").place(x=200, y=160)
@@ -1174,6 +1173,90 @@ def click_btnCADASTRO():
 
 
     root2.mainloop()
+
+
+lista=[1.0,2.0]
+
+def horainicio(lista):
+    import datetime
+    date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
+    lista[0]=date
+    print("ok")
+    print(lista)
+
+
+
+
+
+def horafinal(lista):
+    import datetime
+    date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
+    lista[1]=date
+    print(lista)
+    print("ok2")
+
+    
+a=lista[0]
+b=lista[1]
+
+def diferencahora(a,b ):
+    s = float(a)
+    t = float(b)
+    f = '%Y/%m/%d %H:%M:%S'
+    dif = (t - s)
+    y = dif/3600
+    lblx = Label(root18, textvariable=y, bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=340)
+    print("ok3")
+
+
+def click_btnValor():
+    tempodiferença = diferencahora()
+    lblx = Label(root18, textvariable=tempodiferença, bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=340)
+
+def btnUm():
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command= horainicio(lista)).place(x=100, y=150)
+
+def btnDois():
+                                
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=horafinal(lista)).place(x=100, y=250)
+                                
+def btnTres():
+
+    btnValor= Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"), command=diferencahora(a, b)).place(x=100, y=630)
+
+def btnTudo():
+
+    btnUm()
+    btnDois()
+    btnTres()
+
+
+def click_btnComeçarAluguel():
+
+    global root18
+    root18 = Tk()
+    root18.geometry("750x680+1000+100")
+    root18["bg"] = "darkslategray"
+    
+
+    #======================= LABELS =========================
+
+    lbl0 = Label(root18, text="Olá, aperte o botão a seguir e iniciaremos o aluguel do veículo!", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=100)
+    lbl1 = Label(root18, text="Para finalizar o aluguel aperte o botão a seguir!", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=200)
+    lbl2 = Label(root18, text="Valor Total:",  bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=300)
+
+    #======================= BOTOES =========================
+
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command= btnTudo).place(x=100, y=150)
+    #btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=).place(x=100, y=250)
+    #btnValor= Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"), command=).place(x=100, y=630)
+
+    # ===================== ENTRYS ==========================
+
+
+
+    root18.mainloop()
 
 
 global janela
