@@ -1174,63 +1174,37 @@ def click_btnCADASTRO():
 
     root2.mainloop()
 
+global lista
+global a
+global b
+lista=[0.0,0.0]
 
-lista=[1.0,2.0]
-
-def horainicio(lista):
+def horainicio():
     import datetime
     date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
-    lista[0]=date
+    lista[0]= time.time()
     print("ok")
     print(lista)
 
 
-
-
-
-def horafinal(lista):
+def horafinal():
     import datetime
     date = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y/%m/%d %H:%M:%S')
-    lista[1]=date
-    print(lista)
+    lista[1]= time.time()
     print("ok2")
+    print(lista)
 
+
+
+def diferencahora():
+    s = lista[0]
+    t = lista[1]
+    print(s)
+    print(t)
+    dif = t - s 
+    print(dif)
+    lblx = Label(root18, text="icaroécorno", bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=340)
     
-a=lista[0]
-b=lista[1]
-
-def diferencahora(a,b ):
-    s = float(a)
-    t = float(b)
-    f = '%Y/%m/%d %H:%M:%S'
-    dif = (t - s)
-    y = dif/3600
-    lblx = Label(root18, textvariable=y, bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=340)
-    print("ok3")
-
-
-def click_btnValor():
-    tempodiferença = diferencahora()
-    lblx = Label(root18, textvariable=tempodiferença, bg="darkslategray", fg="black", font=("times new roman", 15, "bold")).place(x=100, y=340)
-
-def btnUm():
-
-    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command= horainicio(lista)).place(x=100, y=150)
-
-def btnDois():
-                                
-    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=horafinal(lista)).place(x=100, y=250)
-                                
-def btnTres():
-
-    btnValor= Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"), command=diferencahora(a, b)).place(x=100, y=630)
-
-def btnTudo():
-
-    btnUm()
-    btnDois()
-    btnTres()
-
 
 def click_btnComeçarAluguel():
 
@@ -1248,9 +1222,9 @@ def click_btnComeçarAluguel():
 
     #======================= BOTOES =========================
 
-    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command= btnTudo).place(x=100, y=150)
-    #btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=).place(x=100, y=250)
-    #btnValor= Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"), command=).place(x=100, y=630)
+    btnStart = Button(root18, text="Iniciar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command= horainicio).place(x=100, y=150)
+    btnFinalizar = Button(root18, text="Finalizar", width=16, bg="gray", fg="black", font=("arial", 10, "bold"), command=horafinal).place(x=100, y=250)
+    btnValor= Button(root18, text="Valor Total", width=69, bg="gray", fg="black", font=("arial", 10, "bold"), command=diferencahora).place(x=100, y=630)
 
     # ===================== ENTRYS ==========================
 
